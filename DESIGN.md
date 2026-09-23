@@ -1,11 +1,11 @@
 # Design System — nduwork
 
 ## Product Context
-- **What this is:** Niu Du's personal homepage at www.nduwork.com. It covers the two agent-tooling projects, links the portfolio, and shows a daily starred-repo pick with a blurb written by a local LLM.
+- **What this is:** Niu Du's personal homepage at www.nduwork.com. It presents Niu as an AI builder, shows two open-source projects as selected work, links the portfolio, and shows a daily starred-repo pick with a blurb written by a local LLM.
 - **Who it's for:** Engineers and hiring managers arriving from GitHub or Proreerfolio.
 - **Space/industry:** Developer personal sites, open-source AI agent tooling.
 - **Project type:** A single static page (GitHub Pages, no build step).
-- **Memorable thing:** "This person builds the tools that run coding agents."
+- **Memorable thing:** "This person builds things with AI": products, agents and the tools around them.
 
 ## Aesthetic Direction
 - **Direction:** Field notebook. Warm paper, sharp ink, one vermilion signal, laid out like a technical poster.
@@ -55,3 +55,4 @@
 |------|----------|-----------|
 | 2026-09-23 | Initial design system created | Created by /design-consultation. The Codex "field notebook" direction was chosen over the "switchboard" direction because it costs less to maintain. |
 | 2026-09-23 | Demos restyled to the page system; portfolio promoted | User feedback: the demos should match the landing style, and the portfolio should be more prominent. It now has a primary vermilion CTA in the hero and a full-width card with a signal-colored left rule. |
+| 2026-09-23 | Reframed from "agent tooling" to "AI builder" | User feedback: they build more than coding-agent tools. The headline is now "I build things *with* AI.", the projects are labelled "Selected work", and the portfolio carries the breadth. |
