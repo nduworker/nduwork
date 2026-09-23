@@ -9,7 +9,7 @@
 
 ## Aesthetic Direction
 - **Direction:** Field notebook. Warm paper, sharp ink, one vermilion signal, laid out like a technical poster.
-- **Decoration level:** Intentional. Only 1px rules, the torn edge on the pick note, and a faint dot-grid "notebook paper" behind the project demos. Both demos use the same paper/ink/mono style as the rest of the page instead of each project's own branding.
+- **Decoration level:** Intentional. Only 1px rules, the torn edge on the pick note, and the project "lenses". Each lens is a live, scaled iframe of the real landing page inside a paper browser frame (mono URL bar, hairline dots), and it pans down that page on hover. The frame follows this system; the content inside is the project's own site.
 - **Mood:** A working engineer's notebook, not a marketing page. Calm and confident, with evidence that real systems are running.
 
 ## Typography
@@ -57,3 +57,4 @@
 | 2026-09-23 | Demos restyled to the page system; portfolio promoted | User feedback: the demos should match the landing style, and the portfolio should be more prominent. It now has a primary vermilion CTA in the hero and a full-width card with a signal-colored left rule. |
 | 2026-09-23 | Reframed from "agent tooling" to "AI builder" | User feedback: they build more than coding-agent tools. The headline is now "I build things *with* AI.", the projects are labelled "Selected work", and the portfolio carries the breadth. |
 | 2026-09-23 | Removed the portfolio card | User feedback: the hero "View my portfolio" CTA is enough, and the card below the projects was redundant. |
+| 2026-09-23 | Demo drawings replaced by live-page lenses | User feedback: reuse the real landing pages and treat each demo as a lens onto them. The iframe is sandboxed and has no pointer events, so the whole card is still the link. |
