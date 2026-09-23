@@ -47,12 +47,27 @@ header nav a:hover { color: var(--signal); }
 .card p { margin: 0; color: var(--muted); }
 .card .go { margin-top: 16px; color: var(--signal); }
 .preview { height: 180px; border-bottom: 1px solid var(--rule); position: relative; }
-/* AgentOn: playful — a phone driving a desk session */
-.pv-agenton { background: color-mix(in srgb, var(--signal) 10%, var(--surface)); display: grid; place-items: center; }
+/* Project demos share the notebook look: paper ground, ink line work, mono labels */
+.preview { background: var(--bg); background-image: radial-gradient(var(--rule) 1px, transparent 1px); background-size: 16px 16px; }
+.pv-agenton { display: grid; place-items: center; }
 .pv-agenton svg { width: 220px; height: 140px; }
-/* PenguPool: editor sidebar of sessions */
-.pv-pengu { background: #0F1B1B; color: #CFE3DF; font: 13px/1.7 var(--mono); padding: 20px 24px; }
-.pv-pengu .dim { color: #6E8A85; } .pv-pengu .on { color: #5FA8A0; } .pv-pengu .msg { color: #FF7857; }
+.pv-pengu { display: grid; place-items: center; }
+.pv-pengu .pane { width: min(300px, 86%); background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 12px 16px; font: 13px/1.7 var(--mono); color: var(--ink); white-space: nowrap; overflow: hidden; }
+.pv-pengu .dim { color: var(--muted); } .pv-pengu .on { color: var(--teal); } .pv-pengu .msg { color: var(--signal); }
+
+.cta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 20px; border: 1px solid var(--ink); border-radius: 4px; text-decoration: none; transition: background .2s ease-out, color .2s ease-out; }
+.btn.primary { background: var(--signal); border-color: var(--signal); color: var(--surface); }
+.btn.primary:hover { background: var(--ink); border-color: var(--ink); }
+.btn:not(.primary):hover { background: var(--ink); color: var(--bg); }
+
+.folio { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: center; margin-bottom: 96px; padding: 40px; background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--signal); border-radius: 6px; text-decoration: none; transition: transform .2s ease-out, border-color .2s ease-out; }
+.folio:hover { transform: translateY(-2px); border-color: var(--ink); border-left-color: var(--signal); }
+.folio h2 { font: 600 clamp(32px, 5vw, 48px)/1.1 var(--serif); margin: 8px 0 16px; }
+.folio p { margin: 0; color: var(--muted); }
+.folio ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.folio li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--rule); color: var(--muted); }
+.folio li span:last-child { color: var(--signal); }
 
 .pick { padding: 64px 0 96px; border-top: 1px solid var(--rule); }
 .pick h2 { font: 600 32px/1.15 var(--serif); margin: 8px 0 32px; }
@@ -70,11 +85,12 @@ footer { padding: 24px 0 48px; border-top: 1px solid var(--rule); color: var(--m
 
 .fade { animation: up .2s ease-out both; }
 @keyframes up { from { opacity: 0; transform: translateY(6px); } }
-@media (prefers-reduced-motion: reduce) { .fade, .card { animation: none; transition: none; } }
+@media (prefers-reduced-motion: reduce) { .fade, .card, .folio, .btn { animation: none; transition: none; } }
 @media (max-width: 720px) {
   .wrap { padding: 0 16px; }
   .hero { padding: 64px 0 48px; }
   .projects { grid-template-columns: 1fr; padding-bottom: 64px; }
+  .folio { grid-template-columns: 1fr; padding: 24px; margin-bottom: 64px; }
   .note { padding: 24px 20px 32px; }
 }
 </style>
@@ -92,6 +108,10 @@ footer { padding: 24px 0 48px; border-top: 1px solid var(--rule); color: var(--m
   <section class="hero fade">
     <h1>I build the tools that <em>run</em> coding agents.</h1>
     <p>Bioinformatics engineer by day. After hours I build open-source plumbing for Claude and Codex sessions: steering them from my phone, and running many at once from my editor.</p>
+    <div class="cta mono">
+      <a class="btn primary" href="https://proreerfolio.com/niu_du">View my portfolio →</a>
+      <a class="btn" href="https://github.com/nduworker">GitHub</a>
+    </div>
   </section>
 
   <section class="projects">
@@ -114,11 +134,13 @@ footer { padding: 24px 0 48px; border-top: 1px solid var(--rule); color: var(--m
     </a>
     <a class="card fade" href="https://pengupool.nduwork.com/">
       <div class="preview pv-pengu" aria-hidden="true">
-        <div><span class="dim">▾</span> nduwork <span class="dim">· 3 sessions</span></div>
-        <div>&nbsp;&nbsp;<span class="on">●</span> site-builder <span class="dim">owns: index.html</span></div>
-        <div>&nbsp;&nbsp;<span class="on">●</span> picker <span class="dim">owns: pick.py</span></div>
-        <div>&nbsp;&nbsp;<span class="dim">○</span> reviewer</div>
-        <div class="msg">&nbsp;&nbsp;@picker → @site-builder: pick.json ready</div>
+        <div class="pane">
+          <div><span class="dim">▾</span> nduwork <span class="dim">· 3 sessions</span></div>
+          <div>&nbsp;&nbsp;<span class="on">●</span> site-builder <span class="dim">index.html</span></div>
+          <div>&nbsp;&nbsp;<span class="on">●</span> picker <span class="dim">pick.py</span></div>
+          <div>&nbsp;&nbsp;<span class="dim">○</span> reviewer</div>
+          <div class="msg">&nbsp;&nbsp;@picker → @site-builder ✓</div>
+        </div>
       </div>
       <div class="body">
         <span class="mono" style="color:var(--muted)">pengupool.nduwork.com</span>
@@ -128,6 +150,19 @@ footer { padding: 24px 0 48px; border-top: 1px solid var(--rule); color: var(--m
       </div>
     </a>
   </section>
+
+  <a class="folio fade" href="https://proreerfolio.com/niu_du">
+    <div>
+      <span class="mono" style="color:var(--signal)">Portfolio</span>
+      <h2>The full story: experience, skills and résumé.</h2>
+      <p>My career portfolio on Proreerfolio, kept current.</p>
+    </div>
+    <ul class="mono">
+      <li><span>Experience</span><span>→</span></li>
+      <li><span>Skills</span><span>→</span></li>
+      <li><span>Résumé</span><span>→</span></li>
+    </ul>
+  </a>
 
   <section class="pick" id="pick" hidden>
     <span class="mono" style="color:var(--muted)">Pick of the day · <span id="p-date"></span></span>

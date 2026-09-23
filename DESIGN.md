@@ -9,7 +9,7 @@
 
 ## Aesthetic Direction
 - **Direction:** Field notebook. Warm paper, sharp ink, one vermilion signal, laid out like a technical poster.
-- **Decoration level:** Intentional. Only 1px rules, the torn edge on the pick note, and project previews drawn in each project's own style.
+- **Decoration level:** Intentional. Only 1px rules, the torn edge on the pick note, and a faint dot-grid "notebook paper" behind the project demos. Both demos use the same paper/ink/mono style as the rest of the page instead of each project's own branding.
 - **Mood:** A working engineer's notebook, not a marketing page. Calm and confident, with evidence that real systems are running.
 
 ## Typography
@@ -54,3 +54,4 @@
 | Date | Decision | Rationale |
 |------|----------|-----------|
 | 2026-09-23 | Initial design system created | Created by /design-consultation. The Codex "field notebook" direction was chosen over the "switchboard" direction because it costs less to maintain. |
+| 2026-09-23 | Demos restyled to the page system; portfolio promoted | User feedback: the demos should match the landing style, and the portfolio should be more prominent. It now has a primary vermilion CTA in the hero and a full-width card with a signal-colored left rule. |
