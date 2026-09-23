@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niu Du</title>
+<meta name="description" content="Niu Du — bioinformatics engineer building the tools that run coding agents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,600;1,6..72,600&family=Instrument+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F3F0E7; --surface: #FFFCF4; --ink: #172522; --muted: #53635C;
+  --rule: #D9D3C4; --signal: #D4472F; --teal: #2F6F6A;
+  --serif: "Newsreader", Georgia, serif;
+  --sans: "Instrument Sans", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101717; --surface: #1B2424; --ink: #F3F0E7; --muted: #A7B2AC;
+    --rule: #2A3535; --signal: #FF7857; --teal: #5FA8A0;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+.mono { font-family: var(--mono); font-size: 12px; line-height: 1.4; letter-spacing: .08em; text-transform: uppercase; }
+
+header { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 24px 0; border-bottom: 1px solid var(--rule); }
+header nav { display: flex; gap: 24px; }
+header nav a { text-decoration: none; color: var(--muted); }
+header nav a:hover { color: var(--signal); }
+
+.hero { padding: 96px 0 64px; }
+.hero h1 { font: 600 clamp(44px, 9vw, 96px)/1.02 var(--serif); letter-spacing: -.02em; margin: 0; max-width: 11ch; }
+.hero h1 em { color: var(--signal); }
+.hero p { color: var(--muted); max-width: 52ch; margin: 32px 0 0; }
+
+.projects { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-bottom: 96px; }
+.card { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; text-decoration: none; overflow: hidden; transition: transform .2s ease-out, border-color .2s ease-out; }
+.card:hover { transform: translateY(-2px); border-color: var(--ink); }
+.card .body { padding: 24px; }
+.card h2 { font: 600 32px/1.15 var(--serif); margin: 8px 0; }
+.card p { margin: 0; color: var(--muted); }
+.card .go { margin-top: 16px; color: var(--signal); }
+.preview { height: 180px; border-bottom: 1px solid var(--rule); position: relative; }
+/* AgentOn: playful — a phone driving a desk session */
+.pv-agenton { background: color-mix(in srgb, var(--signal) 10%, var(--surface)); display: grid; place-items: center; }
+.pv-agenton svg { width: 220px; height: 140px; }
+/* PenguPool: editor sidebar of sessions */
+.pv-pengu { background: #0F1B1B; color: #CFE3DF; font: 13px/1.7 var(--mono); padding: 20px 24px; }
+.pv-pengu .dim { color: #6E8A85; } .pv-pengu .on { color: #5FA8A0; } .pv-pengu .msg { color: #FF7857; }
+
+.pick { padding: 64px 0 96px; border-top: 1px solid var(--rule); }
+.pick h2 { font: 600 32px/1.15 var(--serif); margin: 8px 0 32px; }
+.note { position: relative; max-width: 760px; background: var(--surface); border: 1px solid var(--rule); border-bottom: 0; padding: 32px 32px 40px; }
+.note::after { content: ""; position: absolute; left: -1px; right: -1px; bottom: -12px; height: 12px; background: var(--surface);
+  clip-path: polygon(0 0,100% 0,100% 40%,96% 100%,92% 30%,87% 90%,82% 20%,77% 80%,72% 35%,66% 100%,61% 25%,55% 85%,50% 30%,44% 95%,39% 20%,33% 80%,28% 30%,22% 100%,17% 25%,11% 85%,6% 30%,0 90%); }
+.note h3 { font: 600 22px/1.25 var(--serif); margin: 0 0 8px; }
+.note h3 a { text-decoration-color: var(--signal); text-underline-offset: 4px; }
+.note .desc { color: var(--muted); margin: 0 0 16px; }
+.note blockquote { margin: 0; padding-left: 16px; border-left: 2px solid var(--signal); font-size: 18px; }
+.note .meta { display: flex; flex-wrap: wrap; gap: 8px 24px; color: var(--muted); margin-bottom: 16px; font-variant-numeric: tabular-nums; }
+.stamp { display: inline-block; margin-top: 24px; color: var(--signal); border: 1px solid var(--signal); padding: 4px 8px; border-radius: 2px; transform: rotate(-1.5deg); }
+
+footer { padding: 24px 0 48px; border-top: 1px solid var(--rule); color: var(--muted); }
+
+.fade { animation: up .2s ease-out both; }
+@keyframes up { from { opacity: 0; transform: translateY(6px); } }
+@media (prefers-reduced-motion: reduce) { .fade, .card { animation: none; transition: none; } }
+@media (max-width: 720px) {
+  .wrap { padding: 0 16px; }
+  .hero { padding: 64px 0 48px; }
+  .projects { grid-template-columns: 1fr; padding-bottom: 64px; }
+  .note { padding: 24px 20px 32px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mono">
+    <span>Niu Du / Bioinformatics engineer</span>
+    <nav>
+      <a href="https://proreerfolio.com/niu_du">Portfolio</a>
+      <a href="https://github.com/nduworker">GitHub</a>
+    </nav>
+  </header>
+
+  <section class="hero fade">
+    <h1>I build the tools that <em>run</em> coding agents.</h1>
+    <p>Bioinformatics engineer by day. After hours I build open-source plumbing for Claude and Codex sessions: steering them from my phone, and running many at once from my editor.</p>
+  </section>
+
+  <section class="projects">
+    <a class="card fade" href="https://agenton.nduwork.com/">
+      <div class="preview pv-agenton" aria-hidden="true">
+        <svg viewBox="0 0 220 140" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--ink)">
+          <rect x="8" y="20" width="120" height="80" rx="4"/><path d="M48 116h40M68 100v16"/>
+          <path d="M22 40l10 8-10 8M40 58h24" style="color:var(--signal);stroke:var(--signal)"/>
+          <rect x="160" y="36" width="48" height="88" rx="8" fill="var(--surface)"/>
+          <circle cx="176" cy="96" r="6"/><circle cx="194" cy="96" r="6"/><path d="M172 60h28M172 70h18"/>
+          <path d="M136 56c8-10 16-10 22-6" stroke-dasharray="3 5" style="stroke:var(--signal)"/>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="mono" style="color:var(--muted)">agenton.nduwork.com</span>
+        <h2>AgentOn Pocket</h2>
+        <p>Run your coding agents anywhere. Scan a QR code and your phone becomes a terminal or controller pad for the live desk session over Tailscale.</p>
+        <span class="go mono">Open →</span>
+      </div>
+    </a>
+    <a class="card fade" href="https://pengupool.nduwork.com/">
+      <div class="preview pv-pengu" aria-hidden="true">
+        <div><span class="dim">▾</span> nduwork <span class="dim">· 3 sessions</span></div>
+        <div>&nbsp;&nbsp;<span class="on">●</span> site-builder <span class="dim">owns: index.html</span></div>
+        <div>&nbsp;&nbsp;<span class="on">●</span> picker <span class="dim">owns: pick.py</span></div>
+        <div>&nbsp;&nbsp;<span class="dim">○</span> reviewer</div>
+        <div class="msg">&nbsp;&nbsp;@picker → @site-builder: pick.json ready</div>
+      </div>
+      <div class="body">
+        <span class="mono" style="color:var(--muted)">pengupool.nduwork.com</span>
+        <h2>PenguPool</h2>
+        <p>Agent sessions in your editor. A VS Code / Cursor sidebar that groups, routes and maps many Claude Code sessions, with tmux terminals that survive restarts.</p>
+        <span class="go mono">Open →</span>
+      </div>
+    </a>
+  </section>
+
+  <section class="pick" id="pick" hidden>
+    <span class="mono" style="color:var(--muted)">Pick of the day · <span id="p-date"></span></span>
+    <h2>From my stars</h2>
+    <article class="note">
+      <h3><a id="p-link" href="#"></a></h3>
+      <div class="meta mono"><span id="p-lang"></span><span id="p-stars"></span></div>
+      <p class="desc" id="p-desc"></p>
+      <blockquote id="p-summary"></blockquote>
+      <span class="stamp mono" id="p-stamp"></span>
+    </article>
+  </section>
+
+  <footer class="mono">© Niu Du · nduwork</footer>
+</div>
+<script>
+fetch('pick.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(p => {
+  if (!p || !p.repo) return;
+  const $ = id => document.getElementById(id);
+  $('p-date').textContent = p.date;
+  $('p-link').textContent = p.repo;
+  $('p-link').href = p.url;
+  $('p-lang').textContent = p.language || '';
+  $('p-stars').textContent = '★ ' + Number(p.stars || 0).toLocaleString();
+  $('p-desc').textContent = p.description || '';
+  $('p-summary').textContent = p.summary;
+  $('p-stamp').textContent = 'Written by ' + p.model + ' · on my own runner';
+  $('pick').hidden = false;
+}).catch(() => {});
+</script>
+</body>
+</html>
