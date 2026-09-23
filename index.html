@@ -61,14 +61,6 @@ header nav a:hover { color: var(--signal); }
 .btn.primary:hover { background: var(--ink); border-color: var(--ink); }
 .btn:not(.primary):hover { background: var(--ink); color: var(--bg); }
 
-.folio { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: center; margin-bottom: 96px; padding: 40px; background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--signal); border-radius: 6px; text-decoration: none; transition: transform .2s ease-out, border-color .2s ease-out; }
-.folio:hover { transform: translateY(-2px); border-color: var(--ink); border-left-color: var(--signal); }
-.folio h2 { font: 600 clamp(32px, 5vw, 48px)/1.1 var(--serif); margin: 8px 0 16px; }
-.folio p { margin: 0; color: var(--muted); }
-.folio ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
-.folio li { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--rule); color: var(--muted); }
-.folio li span:last-child { color: var(--signal); }
-
 .pick { padding: 64px 0 96px; border-top: 1px solid var(--rule); }
 .pick h2 { font: 600 32px/1.15 var(--serif); margin: 8px 0 32px; }
 .note { position: relative; max-width: 760px; background: var(--surface); border: 1px solid var(--rule); border-bottom: 0; padding: 32px 32px 40px; }
@@ -85,12 +77,11 @@ footer { padding: 24px 0 48px; border-top: 1px solid var(--rule); color: var(--m
 
 .fade { animation: up .2s ease-out both; }
 @keyframes up { from { opacity: 0; transform: translateY(6px); } }
-@media (prefers-reduced-motion: reduce) { .fade, .card, .folio, .btn { animation: none; transition: none; } }
+@media (prefers-reduced-motion: reduce) { .fade, .card, .btn { animation: none; transition: none; } }
 @media (max-width: 720px) {
   .wrap { padding: 0 16px; }
   .hero { padding: 64px 0 48px; }
   .projects { grid-template-columns: 1fr; padding-bottom: 64px; }
-  .folio { grid-template-columns: 1fr; padding: 24px; margin-bottom: 64px; }
   .note { padding: 24px 20px 32px; }
 }
 </style>
@@ -152,18 +143,6 @@ footer { padding: 24px 0 48px; border-top: 1px solid var(--rule); color: var(--m
     </a>
   </section>
 
-  <a class="folio fade" href="https://proreerfolio.com/niu_du">
-    <div>
-      <span class="mono" style="color:var(--signal)">Portfolio</span>
-      <h2>The full story: experience, skills and résumé.</h2>
-      <p>My career portfolio on Proreerfolio, kept current.</p>
-    </div>
-    <ul class="mono">
-      <li><span>Experience</span><span>→</span></li>
-      <li><span>Skills</span><span>→</span></li>
-      <li><span>Résumé</span><span>→</span></li>
-    </ul>
-  </a>
 
   <section class="pick" id="pick" hidden>
     <span class="mono" style="color:var(--muted)">Pick of the day · <span id="p-date"></span></span>
