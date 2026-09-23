@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pick one of nduworker's starred repos for today and have a local LLM say why I like it.
+"""Pick one of my starred repos (across STAR_USERS) for today and have a local LLM say why I like it.
 
 Writes pick.json at the repo root. Stdlib only.
   python3 scripts/pick.py            # real run (GitHub API + Ollama)
@@ -17,7 +17,7 @@ import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "pick.json"
-USER = os.environ.get("STAR_USER", "nduworker")
+USERS = os.environ.get("STAR_USERS", "nduworker,ndu-bioinfo").split(",")
 MODEL = os.environ.get("OLLAMA_MODEL") or "qwen3.8:27b"
 OLLAMA_URL = os.environ.get("OLLAMA_URL") or "http://localhost:11434/v1/chat/completions"
 HISTORY_DAYS = 7
@@ -36,6 +36,14 @@ def gh(path):
     if tok := os.environ.get("GITHUB_TOKEN"):
         headers["Authorization"] = f"Bearer {tok}"
     return http_json(f"https://api.github.com{path}", headers=headers)
+
+
+def starred(user):
+    out, page = [], 1
+    while batch := gh(f"/users/{user}/starred?per_page=100&page={page}"):
+        out += batch
+        page += 1
+    return out
 
 
 def choose(names, day, history):
@@ -73,8 +81,7 @@ def main():
     if prev.get("date") == day:
         print(f"already picked for {day}: {prev['repo']}")
         return
-    stars = gh(f"/users/{USER}/starred?per_page=100")
-    by_name = {r["full_name"]: r for r in stars}
+    by_name = {r["full_name"]: r for u in USERS for r in starred(u.strip())}
     history = prev.get("history", [])
     name = choose(list(by_name), day, history)
     repo = by_name[name]
