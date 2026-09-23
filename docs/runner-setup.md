@@ -93,6 +93,13 @@ user and that a request to `localhost:11434` works from inside the service
 environment. Don't change the model.
 
 ## 7. HTTPS and live site
+First, enable Pages. As of 2026-09-23 23:40 UTC the repo showed `has_pages: false`, which is why the browser warns that the connection isn't private.
+```bash
+gh api repos/nduworker/nduwork --jq .has_pages   # if false:
+gh api -X POST repos/nduworker/nduwork/pages -f 'source[branch]=main' -f 'source[path]=/'
+gh api -X PUT repos/nduworker/nduwork/pages -f cname=www.nduwork.com
+```
+Then poll until the certificate is issued (10–60 min):
 ```bash
 gh api repos/nduworker/nduwork/pages --jq '{status, cname, https_enforced, cert: .https_certificate.state}'
 ```
