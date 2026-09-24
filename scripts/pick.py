@@ -17,7 +17,7 @@ import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "pick.json"
-USERS = os.environ.get("STAR_USERS", "nduworker,ndu-bioinfo").split(",")
+USERS = os.environ.get("STAR_USERS", "nduworker").split(",")
 MODEL = os.environ.get("OLLAMA_MODEL") or "qwen3.8:27b"
 OLLAMA_URL = os.environ.get("OLLAMA_URL") or "http://localhost:11434/v1/chat/completions"
 HISTORY_DAYS = 7
