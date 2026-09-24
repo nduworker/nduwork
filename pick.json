@@ -1,13 +1,14 @@
 {
-  "date": "2026-09-23",
-  "repo": "VectifyAI/PageIndex",
-  "url": "https://github.com/VectifyAI/PageIndex",
-  "description": "\ud83d\udcd1 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
-  "language": "Python",
-  "stars": 35830,
-  "summary": "PageIndex builds a hierarchical tree index over a document and lets an LLM reason its way down that tree to find the relevant section, which is a much more honest retrieval primitive than \"top-k nearest embeddings\" for long technical reports. The local SDK mode is the part I care about: pip install, point it at your own model key, and you get traceable, explainable retrieval without standing up a vector DB or spending a week tuning chunking strategies. In my bioinformatics work, where the documents are 200-page regulatory filings and the question is \"what does section 4.2.3 actually say about the exclusion criteria,\" this beats vector RAG because the model is literally navigating the document structure the way I would.",
+  "date": "2026-09-24",
+  "repo": "obra/superpowers",
+  "url": "https://github.com/obra/superpowers",
+  "description": "An agentic skills framework & software development methodology that works.",
+  "language": "Shell",
+  "stars": 291114,
+  "summary": "Superpowers is a composable skills layer that forces your coding agent through spec, design sign-off, and a TDD-driven plan before it writes code, which is the structural discipline I want when I'm routing parallel sessions through PenguPool or driving them from AgentOn Pocket on my phone. I appreciate that it's expressed as auto-triggering skills rather than a monolithic system prompt, so it drops into whatever harness I already use without re-architecting my setup. The subagent review loop\u2014each task inspected before the next starts\u2014is the closest thing I've seen to making long autonomous runs observable and trustworthy instead of a firehose I have to babysit.",
   "model": "qwen3.8:27b",
   "history": [
-    "VectifyAI/PageIndex"
+    "VectifyAI/PageIndex",
+    "obra/superpowers"
   ]
 }
