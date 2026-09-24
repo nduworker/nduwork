@@ -58,3 +58,4 @@
 | 2026-09-23 | Reframed from "agent tooling" to "AI builder" | User feedback: they build more than coding-agent tools. The headline is now "I build things *with* AI.", the projects are labelled "Selected work", and the portfolio carries the breadth. |
 | 2026-09-23 | Removed the portfolio card | User feedback: the hero "View my portfolio" CTA is enough, and the card below the projects was redundant. |
 | 2026-09-23 | Demo drawings replaced by live-page lenses | User feedback: reuse the real landing pages and treat each demo as a lens onto them. The iframe is sandboxed and has no pointer events, so the whole card is still the link. |
+| 2026-09-23 | Selected work grows to four lenses: Proreerfolio, Oh Tidepool, AgentOn, PenguPool | User feedback: they build more than productivity tools. The cards are now a 2×2 grid with a mono kind tag on each (AI career platform / iPhone app / open-source dev tool), and the subline names the range. |
