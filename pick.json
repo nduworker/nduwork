@@ -1,14 +1,15 @@
 {
-  "date": "2026-09-24",
-  "repo": "obra/superpowers",
-  "url": "https://github.com/obra/superpowers",
-  "description": "An agentic skills framework & software development methodology that works.",
-  "language": "Shell",
-  "stars": 291114,
-  "summary": "Superpowers is a composable skills layer that forces your coding agent through spec, design sign-off, and a TDD-driven plan before it writes code, which is the structural discipline I want when I'm routing parallel sessions through PenguPool or driving them from AgentOn Pocket on my phone. I appreciate that it's expressed as auto-triggering skills rather than a monolithic system prompt, so it drops into whatever harness I already use without re-architecting my setup. The subagent review loop\u2014each task inspected before the next starts\u2014is the closest thing I've seen to making long autonomous runs observable and trustworthy instead of a firehose I have to babysit.",
+  "date": "2026-09-25",
+  "repo": "Nicolepcx/ai-agents-the-definitive-guide",
+  "url": "https://github.com/Nicolepcx/ai-agents-the-definitive-guide",
+  "description": "Repo for AI Agents The Definitive Guide",
+  "language": "Jupyter Notebook",
+  "stars": 2471,
+  "summary": "This is the O'Reilly companion code for an agents book, laid out as per-chapter Colab notebooks that walk through CoT, ReAct, hierarchical teams, AB-MCTS, and then the parts most tutorials skip: production contracts, tool governance, evaluation harnesses, and cost-aware design. I starred it because the evaluation and cost chapters (8\u20139 and 11) are exactly the observability and budgeting groundwork I need when I'm routing parallel agent sessions in PenguPool and driving them remotely through AgentOn Pocket. It's not a framework, just a structured set of runnable notebooks that makes the architecture-to-production pipeline concrete enough to reference while building.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
-    "obra/superpowers"
+    "obra/superpowers",
+    "Nicolepcx/ai-agents-the-definitive-guide"
   ]
 }
