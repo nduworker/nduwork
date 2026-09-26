@@ -1,15 +1,16 @@
 {
-  "date": "2026-09-25",
-  "repo": "Nicolepcx/ai-agents-the-definitive-guide",
-  "url": "https://github.com/Nicolepcx/ai-agents-the-definitive-guide",
-  "description": "Repo for AI Agents The Definitive Guide",
-  "language": "Jupyter Notebook",
-  "stars": 2471,
-  "summary": "This is the O'Reilly companion code for an agents book, laid out as per-chapter Colab notebooks that walk through CoT, ReAct, hierarchical teams, AB-MCTS, and then the parts most tutorials skip: production contracts, tool governance, evaluation harnesses, and cost-aware design. I starred it because the evaluation and cost chapters (8\u20139 and 11) are exactly the observability and budgeting groundwork I need when I'm routing parallel agent sessions in PenguPool and driving them remotely through AgentOn Pocket. It's not a framework, just a structured set of runnable notebooks that makes the architecture-to-production pipeline concrete enough to reference while building.",
+  "date": "2026-09-26",
+  "repo": "General-Legal/legal-templates",
+  "url": "https://github.com/General-Legal/legal-templates",
+  "description": "Public collection of high-quality templates created by General Legal attorneys with CC0 license",
+  "language": "Python",
+  "stars": 1968,
+  "summary": "Attorney-drafted startup contracts in CC0 markdown with `<mark>`-tagged fill-in fields is exactly the kind of boring infrastructure I wish I'd had when I was shipping Oh Tidepool and needed a privacy policy without a $2,000 invoice. The LLM-optimized format is a small but real engineering choice: the field markers give a model a clean, unambiguous contract to fill, and the per-template READMEs explain scope and key provisions well enough that I can actually sanity-check the output before it goes live. The BAA template is a nice nod to anyone, like me, who keeps a bioinformatics thread running through their product work.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
     "obra/superpowers",
-    "Nicolepcx/ai-agents-the-definitive-guide"
+    "Nicolepcx/ai-agents-the-definitive-guide",
+    "General-Legal/legal-templates"
   ]
 }
