@@ -1,16 +1,17 @@
 {
-  "date": "2026-09-26",
-  "repo": "General-Legal/legal-templates",
-  "url": "https://github.com/General-Legal/legal-templates",
-  "description": "Public collection of high-quality templates created by General Legal attorneys with CC0 license",
-  "language": "Python",
-  "stars": 1968,
-  "summary": "Attorney-drafted startup contracts in CC0 markdown with `<mark>`-tagged fill-in fields is exactly the kind of boring infrastructure I wish I'd had when I was shipping Oh Tidepool and needed a privacy policy without a $2,000 invoice. The LLM-optimized format is a small but real engineering choice: the field markers give a model a clean, unambiguous contract to fill, and the per-template READMEs explain scope and key provisions well enough that I can actually sanity-check the output before it goes live. The BAA template is a nice nod to anyone, like me, who keeps a bioinformatics thread running through their product work.",
+  "date": "2026-09-27",
+  "repo": "colbymchenry/codegraph",
+  "url": "https://github.com/colbymchenry/codegraph",
+  "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent \u2014 fewer tokens, fewer tool calls, 100% local",
+  "language": "C",
+  "stars": 72175,
+  "summary": "CodeGraph builds a local, Rust-powered dependency and call graph over your codebase and exposes it as an MCP server, so agents like Claude Code or Codex get surgical cross-file context instead of burning tokens on repeated file reads and greps. That's exactly the kind of toil-removal I want when I'm running parallel sessions in PenguPool or driving a Codex session from my phone via AgentOn Pocket \u2014 the agent stops re-scanning the whole repo and just queries the graph. I also appreciate that it ships as a single self-contained binary with auto-sync on file changes: no Node runtime to babysit, no cloud round-trip, no manual reindex step.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
     "obra/superpowers",
     "Nicolepcx/ai-agents-the-definitive-guide",
-    "General-Legal/legal-templates"
+    "General-Legal/legal-templates",
+    "colbymchenry/codegraph"
   ]
 }
