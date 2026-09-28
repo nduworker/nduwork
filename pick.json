@@ -1,17 +1,18 @@
 {
-  "date": "2026-09-27",
-  "repo": "colbymchenry/codegraph",
-  "url": "https://github.com/colbymchenry/codegraph",
-  "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent \u2014 fewer tokens, fewer tool calls, 100% local",
-  "language": "C",
-  "stars": 72175,
-  "summary": "CodeGraph builds a local, Rust-powered dependency and call graph over your codebase and exposes it as an MCP server, so agents like Claude Code or Codex get surgical cross-file context instead of burning tokens on repeated file reads and greps. That's exactly the kind of toil-removal I want when I'm running parallel sessions in PenguPool or driving a Codex session from my phone via AgentOn Pocket \u2014 the agent stops re-scanning the whole repo and just queries the graph. I also appreciate that it ships as a single self-contained binary with auto-sync on file changes: no Node runtime to babysit, no cloud round-trip, no manual reindex step.",
+  "date": "2026-09-28",
+  "repo": "krafton-ai/WHALE",
+  "url": "https://github.com/krafton-ai/WHALE",
+  "description": "Official implementation of WHALE (Weight-Harness Alternating Learning)",
+  "language": "Python",
+  "stars": 52,
+  "summary": "WHALE treats the agent harness\u2014tool definitions, context management, control flow\u2014as a first-class optimization target alongside the weights, alternating small RSFT updates with a Meta-Harness search under a fixed per-cycle budget, and ships clean ablations (rsft_only vs mh_only) so you can actually measure how much of the gain comes from the scaffolding versus the model. That decomposition is the exact problem I hit in PenguPool, where I was hand-tuning routing and tool exposure around a frozen model and had no principled way to know whether the harness or the weights were the bottleneck. The repo is small and reproducible\u2014four launcher scripts per domain, vendored verl, Apache-2.0\u2014so I can drop the alternation loop into a local experiment without rebuilding a training stack.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
     "obra/superpowers",
     "Nicolepcx/ai-agents-the-definitive-guide",
     "General-Legal/legal-templates",
-    "colbymchenry/codegraph"
+    "colbymchenry/codegraph",
+    "krafton-ai/WHALE"
   ]
 }
