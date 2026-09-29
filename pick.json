@@ -1,11 +1,11 @@
 {
-  "date": "2026-09-28",
-  "repo": "krafton-ai/WHALE",
-  "url": "https://github.com/krafton-ai/WHALE",
-  "description": "Official implementation of WHALE (Weight-Harness Alternating Learning)",
-  "language": "Python",
-  "stars": 52,
-  "summary": "WHALE treats the agent harness\u2014tool definitions, context management, control flow\u2014as a first-class optimization target alongside the weights, alternating small RSFT updates with a Meta-Harness search under a fixed per-cycle budget, and ships clean ablations (rsft_only vs mh_only) so you can actually measure how much of the gain comes from the scaffolding versus the model. That decomposition is the exact problem I hit in PenguPool, where I was hand-tuning routing and tool exposure around a frozen model and had no principled way to know whether the harness or the weights were the bottleneck. The repo is small and reproducible\u2014four launcher scripts per domain, vendored verl, Apache-2.0\u2014so I can drop the alternation loop into a local experiment without rebuilding a training stack.",
+  "date": "2026-09-29",
+  "repo": "satnaing/shadcn-admin",
+  "url": "https://github.com/satnaing/shadcn-admin",
+  "description": "Admin Dashboard UI built with Shadcn and Vite.",
+  "language": "TypeScript",
+  "stars": 15089,
+  "summary": "It's a set of dashboard pages\u2014sidebar, command palette, data tables, light/dark toggle\u2014built on Shadcn so you copy the components into your own app instead of inheriting a whole template, which is exactly the shape I want when I need to wire up an admin panel for Proreerfolio without spending a week on layout boilerplate. The author is explicit that it's a component collection, not a starter, and the Shadcn CLI stays usable for the non-customized pieces, so it slots into an existing Vite + Tailwind project with almost no friction. The RTL and accessibility pass on the Radix primitives is a nice touch I'd rather not have to do myself.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -13,6 +13,7 @@
     "Nicolepcx/ai-agents-the-definitive-guide",
     "General-Legal/legal-templates",
     "colbymchenry/codegraph",
-    "krafton-ai/WHALE"
+    "krafton-ai/WHALE",
+    "satnaing/shadcn-admin"
   ]
 }
