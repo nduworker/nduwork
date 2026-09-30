@@ -1,11 +1,11 @@
 {
-  "date": "2026-09-29",
-  "repo": "satnaing/shadcn-admin",
-  "url": "https://github.com/satnaing/shadcn-admin",
-  "description": "Admin Dashboard UI built with Shadcn and Vite.",
-  "language": "TypeScript",
-  "stars": 15089,
-  "summary": "It's a set of dashboard pages\u2014sidebar, command palette, data tables, light/dark toggle\u2014built on Shadcn so you copy the components into your own app instead of inheriting a whole template, which is exactly the shape I want when I need to wire up an admin panel for Proreerfolio without spending a week on layout boilerplate. The author is explicit that it's a component collection, not a starter, and the Shadcn CLI stays usable for the non-customized pieces, so it slots into an existing Vite + Tailwind project with almost no friction. The RTL and accessibility pass on the Radix primitives is a nice touch I'd rather not have to do myself.",
+  "date": "2026-09-30",
+  "repo": "tt-a1i/archify",
+  "url": "https://github.com/tt-a1i/archify",
+  "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams\u2014self-contained HTML with motion and crisp export.",
+  "language": "JavaScript",
+  "stars": 75089,
+  "summary": "Archify is an agent skill that takes a plain-English description of a system and emits a single self-contained HTML file with interactive architecture, sequence, or data-flow diagrams\u2014no server, no build step, just open the file. That slots directly into how I drive sessions through PenguPool and AgentOn Pocket: I prompt a Codex or Claude session to diagram a request path or a lifecycle, get a portable artifact I can drop into a README or hand to a teammate, and the source-backed links in the output make it verifiable rather than decorative. I like that the result is one HTML file you can diff, version, and share without anyone installing a diagramming tool.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -14,6 +14,7 @@
     "General-Legal/legal-templates",
     "colbymchenry/codegraph",
     "krafton-ai/WHALE",
-    "satnaing/shadcn-admin"
+    "satnaing/shadcn-admin",
+    "tt-a1i/archify"
   ]
 }
