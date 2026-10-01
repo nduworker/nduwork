@@ -1,11 +1,11 @@
 {
-  "date": "2026-09-30",
-  "repo": "tt-a1i/archify",
-  "url": "https://github.com/tt-a1i/archify",
-  "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams\u2014self-contained HTML with motion and crisp export.",
-  "language": "JavaScript",
-  "stars": 75089,
-  "summary": "Archify is an agent skill that takes a plain-English description of a system and emits a single self-contained HTML file with interactive architecture, sequence, or data-flow diagrams\u2014no server, no build step, just open the file. That slots directly into how I drive sessions through PenguPool and AgentOn Pocket: I prompt a Codex or Claude session to diagram a request path or a lifecycle, get a portable artifact I can drop into a README or hand to a teammate, and the source-backed links in the output make it verifiable rather than decorative. I like that the result is one HTML file you can diff, version, and share without anyone installing a diagramming tool.",
+  "date": "2026-10-01",
+  "repo": "sumleo/RLCDAlignBench",
+  "url": "https://github.com/sumleo/RLCDAlignBench",
+  "description": "RLCDAlignBench: 44 alignment-failure detection benchmarks and code for 'Just Ask Jev' (RLCD zero-shot detector of AI alignment failures)",
+  "language": "Python",
+  "stars": 21,
+  "summary": "The probability-readout finding is the one I'd actually build on: treating a single calibrated call as soft probabilities rather than an argmax gets 0.886 median AUROC zero-shot across 44 benchmarks and five 2B\u20137B models, which is the small, local, composable trust signal I want sitting between my PenguPool agent sessions and whatever they execute. I also like the negative result \u2014 question phrasing barely matters and context only helps when it leaks the label \u2014 because it's the kind of sobering evidence I want before wiring a detector into a pipeline instead of another \"just prompt it harder\" story.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -15,6 +15,7 @@
     "colbymchenry/codegraph",
     "krafton-ai/WHALE",
     "satnaing/shadcn-admin",
-    "tt-a1i/archify"
+    "tt-a1i/archify",
+    "sumleo/RLCDAlignBench"
   ]
 }
