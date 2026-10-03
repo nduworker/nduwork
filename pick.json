@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-02",
-  "repo": "obra/superpowers",
-  "url": "https://github.com/obra/superpowers",
-  "description": "An agentic skills framework & software development methodology that works.",
-  "language": "Shell",
-  "stars": 294337,
-  "summary": "Superpowers is a composable skills layer that drops into whatever agent harness you already run\u2014Claude Code, Codex, Cursor, a dozen others\u2014and enforces a spec \u2192 plan \u2192 subagent-execute loop with review, so the agent stops barreling straight into code. That's the structure I want baked in underneath AgentOn Pocket and PenguPool: when I'm routing sessions or driving them from my phone, the methodology has to be the default behavior, not something I re-prompt every time. The \"written for an enthusiastic junior with poor taste and an aversion to testing\" plan format is a small detail I appreciate, because it's the kind of constraint that makes a two-hour autonomous run actually legible when I come back to it.",
+  "date": "2026-10-03",
+  "repo": "paperclipai/paperclip",
+  "url": "https://github.com/paperclipai/paperclip",
+  "description": "The open-source app everyone uses to manage agents at work",
+  "language": "TypeScript",
+  "stars": 96634,
+  "summary": "Paperclip is a Node.js server and React dashboard that sits on top of whatever agent CLIs you already run\u2014Claude Code, Codex, Cursor, Gemini CLI\u2014and gives you a single place to assign goals, watch progress, and enforce per-agent budgets. It scratches the same itch PenguPool does but from the other end: instead of routing sessions inside VS Code, it's the outer coordination layer for when you've got more than one agent working in parallel and you're losing track of who's doing what. The adapter model is clean (any CLI that can receive a heartbeat plugs in), and the cost-tracking-per-agent piece is the part I'd actually wire into my own workflow.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -17,6 +17,7 @@
     "satnaing/shadcn-admin",
     "tt-a1i/archify",
     "sumleo/RLCDAlignBench",
-    "obra/superpowers"
+    "obra/superpowers",
+    "paperclipai/paperclip"
   ]
 }
