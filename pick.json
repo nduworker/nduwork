@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-03",
-  "repo": "paperclipai/paperclip",
-  "url": "https://github.com/paperclipai/paperclip",
-  "description": "The open-source app everyone uses to manage agents at work",
+  "date": "2026-10-04",
+  "repo": "cursor/plugins",
+  "url": "https://github.com/cursor/plugins",
+  "description": "Cursor plugin specification and official plugins",
   "language": "TypeScript",
-  "stars": 96634,
-  "summary": "Paperclip is a Node.js server and React dashboard that sits on top of whatever agent CLIs you already run\u2014Claude Code, Codex, Cursor, Gemini CLI\u2014and gives you a single place to assign goals, watch progress, and enforce per-agent budgets. It scratches the same itch PenguPool does but from the other end: instead of routing sessions inside VS Code, it's the outer coordination layer for when you've got more than one agent working in parallel and you're losing track of who's doing what. The adapter model is clean (any CLI that can receive a heartbeat plugs in), and the cost-tracking-per-agent piece is the part I'd actually wire into my own workflow.",
+  "stars": 9763,
+  "summary": "The plugin format is just a directory with a plugin.json manifest, which is exactly the kind of inspectable, composable packaging I want when I'm wiring agent sessions in PenguPool or routing tool calls through AgentOn Pocket. The cli-for-agent entry is the one that made me stop scrolling: it codifies the contract between an agent and a CLI (idempotency, dry-run, structured errors, help-with-examples) as a reusable spec rather than a vibes-based prompt. It's a small but useful artifact for anyone building tools that agents actually need to drive without a human babysitting the terminal.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -18,6 +18,7 @@
     "tt-a1i/archify",
     "sumleo/RLCDAlignBench",
     "obra/superpowers",
-    "paperclipai/paperclip"
+    "paperclipai/paperclip",
+    "cursor/plugins"
   ]
 }
