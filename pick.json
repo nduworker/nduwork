@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-05",
-  "repo": "hypit-ai/hypit",
-  "url": "https://github.com/hypit-ai/hypit",
-  "description": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the B-roll, ship 100 variants in one command, and get your 100M views.",
-  "language": "TypeScript",
-  "stars": 19433,
-  "summary": "The interesting part of Hypit isn't the \"clone a viral video\" pitch \u2014 it's SVML, a declarative video-workflow language that a coding agent writes and a local Chromium-based renderer compiles, with timing anchored to words rather than timestamps and generation models fully optional. That word-anchored, agent-writable intermediate representation is the kind of composable, observable pipeline I'm after, and the fact that it plugs into the same Claude Code / Codex loop I'm already wiring up in PenguPool makes it a useful reference for giving an LLM a structured output format a deterministic pipeline can execute. I'll grant them one thing: the architecture is sound even if the \"100M views\" tagline made me wince.",
+  "date": "2026-10-06",
+  "repo": "RizRiyz/luvus",
+  "url": "https://github.com/RizRiyz/luvus",
+  "description": "Mission control for your AI agents",
+  "language": "Rust",
+  "stars": 954,
+  "summary": "Luvus is a Rust TUI that wraps your terminal in split panes, live agent status (tokens, cost, context use, blocked/idle/working), and a bottom composer for sending prompts to specific agent panes without losing focus. The worktree orchestration layer\u2014task queues, path leases, quality gates, and a versioned UHP protocol for local IPC between harnesses\u2014is the kind of composable plumbing I was hand-rolling in PenguPool, but here it ships as a single binary with a `luvus doctor` command. The optional read-only web client with a TLS tunnel for phone access overlaps with what I built in AgentOn Pocket, and I appreciate that control is opt-in rather than the default.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -20,6 +20,7 @@
     "obra/superpowers",
     "paperclipai/paperclip",
     "cursor/plugins",
-    "hypit-ai/hypit"
+    "hypit-ai/hypit",
+    "RizRiyz/luvus"
   ]
 }
