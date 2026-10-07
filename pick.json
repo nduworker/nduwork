@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-06",
-  "repo": "RizRiyz/luvus",
-  "url": "https://github.com/RizRiyz/luvus",
-  "description": "Mission control for your AI agents",
-  "language": "Rust",
-  "stars": 954,
-  "summary": "Luvus is a Rust TUI that wraps your terminal in split panes, live agent status (tokens, cost, context use, blocked/idle/working), and a bottom composer for sending prompts to specific agent panes without losing focus. The worktree orchestration layer\u2014task queues, path leases, quality gates, and a versioned UHP protocol for local IPC between harnesses\u2014is the kind of composable plumbing I was hand-rolling in PenguPool, but here it ships as a single binary with a `luvus doctor` command. The optional read-only web client with a TLS tunnel for phone access overlaps with what I built in AgentOn Pocket, and I appreciate that control is opt-in rather than the default.",
+  "date": "2026-10-07",
+  "repo": "AgriciDaniel/compass",
+  "url": "https://github.com/AgriciDaniel/compass",
+  "description": "Compass: run your whole life out of Obsidian. Daily questions, quarterly retreats, planning, habits, tasks, writing, and an AI assistant in the vault.",
+  "language": "JavaScript",
+  "stars": 900,
+  "summary": "I like that Compass keeps the entire system as plain Markdown with a single config file (Meta/Compass Config.md) whose property prefixes drive every dashboard, so you change one note and the whole vault reshapes itself without touching a plugin. The AI layer is the part that actually interests me: it reads AGENTS.md, runs a fixed library of approval-aware prompts, and the MCP bridge is a read-only tool allowlist, which is the same constrained, observable agent pattern I build into AgentOn Pocket and PenguPool. It's a useful reference for how to make a local-first personal system that an LLM can actually operate without you babysitting every prompt.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -21,6 +21,7 @@
     "paperclipai/paperclip",
     "cursor/plugins",
     "hypit-ai/hypit",
-    "RizRiyz/luvus"
+    "RizRiyz/luvus",
+    "AgriciDaniel/compass"
   ]
 }
