@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-07",
-  "repo": "AgriciDaniel/compass",
-  "url": "https://github.com/AgriciDaniel/compass",
-  "description": "Compass: run your whole life out of Obsidian. Daily questions, quarterly retreats, planning, habits, tasks, writing, and an AI assistant in the vault.",
-  "language": "JavaScript",
-  "stars": 900,
-  "summary": "I like that Compass keeps the entire system as plain Markdown with a single config file (Meta/Compass Config.md) whose property prefixes drive every dashboard, so you change one note and the whole vault reshapes itself without touching a plugin. The AI layer is the part that actually interests me: it reads AGENTS.md, runs a fixed library of approval-aware prompts, and the MCP bridge is a read-only tool allowlist, which is the same constrained, observable agent pattern I build into AgentOn Pocket and PenguPool. It's a useful reference for how to make a local-first personal system that an LLM can actually operate without you babysitting every prompt.",
+  "date": "2026-10-08",
+  "repo": "ghostty-org/ghostty",
+  "url": "https://github.com/ghostty-org/ghostty",
+  "description": "\ud83d\udc7b Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+  "language": "Zig",
+  "stars": 61976,
+  "summary": "Ghostty is the terminal I've been reaching for lately because the multi-threaded per-terminal architecture (dedicated read, write, and render threads) plus a SIMD-optimized parser make it genuinely snappy even when I've got a dozen agent sessions spitting output across PenguPool panes. What sold me past the speed claim is libghostty, a zero-dependency C and Zig library you can embed in your own app to get a standards-compliant terminal widget, which is exactly the kind of composable primitive I want when I'm gluing small local tools together rather than shipping a monolith. The fact that the macOS build is a real SwiftUI app with a Metal renderer instead of a cross-platform web wrapper tells me the people writing it care about the native, local experience the same way I do.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -22,6 +22,7 @@
     "cursor/plugins",
     "hypit-ai/hypit",
     "RizRiyz/luvus",
-    "AgriciDaniel/compass"
+    "AgriciDaniel/compass",
+    "ghostty-org/ghostty"
   ]
 }
