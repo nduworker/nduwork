@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-08",
-  "repo": "ghostty-org/ghostty",
-  "url": "https://github.com/ghostty-org/ghostty",
-  "description": "\ud83d\udc7b Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
-  "language": "Zig",
-  "stars": 61976,
-  "summary": "Ghostty is the terminal I've been reaching for lately because the multi-threaded per-terminal architecture (dedicated read, write, and render threads) plus a SIMD-optimized parser make it genuinely snappy even when I've got a dozen agent sessions spitting output across PenguPool panes. What sold me past the speed claim is libghostty, a zero-dependency C and Zig library you can embed in your own app to get a standards-compliant terminal widget, which is exactly the kind of composable primitive I want when I'm gluing small local tools together rather than shipping a monolith. The fact that the macOS build is a real SwiftUI app with a Metal renderer instead of a cross-platform web wrapper tells me the people writing it care about the native, local experience the same way I do.",
+  "date": "2026-10-09",
+  "repo": "krafton-ai/WHALE",
+  "url": "https://github.com/krafton-ai/WHALE",
+  "description": "Official implementation of WHALE (Weight-Harness Alternating Learning)",
+  "language": "Python",
+  "stars": 58,
+  "summary": "WHALE's core move\u2014alternating small RSFT weight updates with a Meta-Harness search over tools, context, and control flow instead of treating the two as independent levers\u2014is exactly the framing I keep running into when I build PenguPool and AgentOn Pocket, where the harness is where most of the actual engineering lives. What sells it to me is the small-model result: Qwen 2B/4B agents on AIME and Lichess puzzles getting real accuracy gains from harness co-optimization, which is a concrete argument that I don't need a bigger model, I need a better scaffold around a small one. The repo is also refreshingly scoped\u2014three domains, four ablation conditions, one shared `alternate.sh` loop\u2014so I can actually read the meta-harness proposer and lift the search structure without wading through a research framework.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -23,6 +23,7 @@
     "hypit-ai/hypit",
     "RizRiyz/luvus",
     "AgriciDaniel/compass",
-    "ghostty-org/ghostty"
+    "ghostty-org/ghostty",
+    "krafton-ai/WHALE"
   ]
 }
