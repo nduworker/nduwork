@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-09",
-  "repo": "krafton-ai/WHALE",
-  "url": "https://github.com/krafton-ai/WHALE",
-  "description": "Official implementation of WHALE (Weight-Harness Alternating Learning)",
+  "date": "2026-10-10",
+  "repo": "General-Legal/legal-templates",
+  "url": "https://github.com/General-Legal/legal-templates",
+  "description": "Public collection of high-quality templates created by General Legal attorneys with CC0 license",
   "language": "Python",
-  "stars": 58,
-  "summary": "WHALE's core move\u2014alternating small RSFT weight updates with a Meta-Harness search over tools, context, and control flow instead of treating the two as independent levers\u2014is exactly the framing I keep running into when I build PenguPool and AgentOn Pocket, where the harness is where most of the actual engineering lives. What sells it to me is the small-model result: Qwen 2B/4B agents on AIME and Lichess puzzles getting real accuracy gains from harness co-optimization, which is a concrete argument that I don't need a bigger model, I need a better scaffold around a small one. The repo is also refreshingly scoped\u2014three domains, four ablation conditions, one shared `alternate.sh` loop\u2014so I can actually read the meta-harness proposer and lift the search structure without wading through a research framework.",
+  "stars": 2732,
+  "summary": "What caught my eye is the `<mark>` tag convention for fill-in fields \u2014 it's a minimal, machine-parseable signal that lets you script a \"what still needs customizing?\" pass over any template without NLP, which is exactly the kind of low-toil, observable setup I like. The BAA and DPA templates are directly relevant to my bioinformatics work where I'm handling PHI, and the CC0 license means I can drop them into Proreerfolio's onboarding flow or Oh Tidepool's data-processing paperwork without a lawyer review cycle. The whole thing is structured like a small dev tool \u2014 one directory per template, a fetch script, a docx-to-markdown converter \u2014 rather than a content dump, so it slots cleanly into a pipeline instead of sitting in a shared drive.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -24,6 +24,7 @@
     "RizRiyz/luvus",
     "AgriciDaniel/compass",
     "ghostty-org/ghostty",
-    "krafton-ai/WHALE"
+    "krafton-ai/WHALE",
+    "General-Legal/legal-templates"
   ]
 }
