@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-12",
-  "repo": "MadsLorentzen/ai-job-search",
-  "url": "https://github.com/MadsLorentzen/ai-job-search",
-  "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+  "date": "2026-10-13",
+  "repo": "topoteretes/cognee",
+  "url": "https://github.com/topoteretes/cognee",
+  "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free",
   "language": "Python",
-  "stars": 46360,
-  "summary": "I starred this because it's the local-first, CLI-native counterpart to what I'm building in Proreerfolio: a fork-and-own workflow where Claude Code evaluates postings, tailors a CV, and runs a drafter-reviewer pass on the cover letter, all on your machine. The composable skill structure\u2014swap the Danish job-portal scrapers for your own market, swap the agent backend if you want\u2014matches how I think about PenguPool and AgentOn Pocket, where the value is in the routing and observation layer rather than a black-box SaaS. And the README's \"69 applications, 20 first interviews, 1 signed contract\" from a geophysicist who told every employer he was using it is the kind of proof I trust over a polished demo.",
+  "stars": 32189,
+  "summary": "Cognee ingests documents, code, and conversation logs into a self-hosted knowledge graph using local GLiNER extraction and local embeddings, then lets an agent query that graph across sessions without a single API call. That's exactly the missing layer in PenguPool, where I'm routing a dozen agent sessions and need durable, structured context that survives a restart instead of re-reading the same files every run. Coming from bioinformatics, I also like that it supports custom ontologies rather than dumping everything into a flat vector store, which is how the good pathway databases have always been built.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -27,6 +27,7 @@
     "krafton-ai/WHALE",
     "General-Legal/legal-templates",
     "storytold/photocraft",
-    "MadsLorentzen/ai-job-search"
+    "MadsLorentzen/ai-job-search",
+    "topoteretes/cognee"
   ]
 }
