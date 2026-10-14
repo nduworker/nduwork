@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-13",
-  "repo": "topoteretes/cognee",
-  "url": "https://github.com/topoteretes/cognee",
-  "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free",
-  "language": "Python",
-  "stars": 32189,
-  "summary": "Cognee ingests documents, code, and conversation logs into a self-hosted knowledge graph using local GLiNER extraction and local embeddings, then lets an agent query that graph across sessions without a single API call. That's exactly the missing layer in PenguPool, where I'm routing a dozen agent sessions and need durable, structured context that survives a restart instead of re-reading the same files every run. Coming from bioinformatics, I also like that it supports custom ontologies rather than dumping everything into a flat vector store, which is how the good pathway databases have always been built.",
+  "date": "2026-10-14",
+  "repo": "coldteadotai/pr-lens",
+  "url": "https://github.com/coldteadotai/pr-lens",
+  "description": "Review code 100X faster. Lens draws every PR as animated architecture and data-flow walkthroughs, inside the pull request itself. Use it as a GitHub App, GitHub Action, CLI, or a Skill for your coding agent",
+  "language": "TypeScript",
+  "stars": 1960,
+  "summary": "PR Lens posts an animated architecture and data-flow diagram as a comment on the PR itself, so I can see blast radius and payload shapes without scrolling through a 400-line diff. The fact that it ships as a GitHub App, a CLI, and a Skill for coding agents means I can drop it into PenguPool sessions when an agent is reviewing a change and needs spatial context about the codebase. It's the kind of tool that removes a real layer of review toil without asking me to adopt another IDE plugin or dashboard.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -28,6 +28,7 @@
     "General-Legal/legal-templates",
     "storytold/photocraft",
     "MadsLorentzen/ai-job-search",
-    "topoteretes/cognee"
+    "topoteretes/cognee",
+    "coldteadotai/pr-lens"
   ]
 }
