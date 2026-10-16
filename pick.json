@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-15",
-  "repo": "sumleo/RLCDAlignBench",
-  "url": "https://github.com/sumleo/RLCDAlignBench",
-  "description": "RLCDAlignBench: 44 alignment-failure detection benchmarks and code for 'Just Ask Jev' (RLCD zero-shot detector of AI alignment failures)",
-  "language": "Python",
-  "stars": 28,
-  "summary": "RLCDAlignBench hands you 7,193 labelled detection instances across ten failure types on 2B-to-7B open models, which is the exact scale I run in PenguPool and AgentOn Pocket when I need to tell whether a routed agent session is hallucinating or concealing uncertainty rather than just doing its job. The \"Just Ask Jev\" readout \u2014 one call that returns calibrated probabilities per typed question instead of an argmax verdict \u2014 is the kind of composable, low-toil check I'd slot in front of my agent routing without spinning up a separate classifier. What actually sold me is the ablation showing that reading those answers as probabilities instead of thresholding them beats supervised baselines on most benchmarks; that's the sort of small, concrete engineering result that changes how you build.",
+  "date": "2026-10-16",
+  "repo": "tinyhumansai/openhuman",
+  "url": "https://github.com/tinyhumansai/openhuman",
+  "description": "The fastest, cheapest, most efficient open-source agent harness. Run more than 500 agents on a $10 VPS.",
+  "language": "Rust",
+  "stars": 42109,
+  "summary": "OpenHuman is a Rust agent harness that shares one process across a whole fleet and compresses context between calls, which is the same scheduling problem I'm chewing on in PenguPool but with a much more aggressive per-agent memory budget. The \"500 agents on a $10 VPS\" headline is marketing spin, but the underlying trick of not respawning a heavyweight process per session and not resending the full prompt every turn is exactly the kind of toil removal I care about. What I'd actually want to poke at is the Rust library API: if the session scheduler and token-compression layers are clean, it's a useful building block for routing agent work across cheap hardware without babysitting a dozen Node processes.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -30,6 +30,7 @@
     "MadsLorentzen/ai-job-search",
     "topoteretes/cognee",
     "coldteadotai/pr-lens",
-    "sumleo/RLCDAlignBench"
+    "sumleo/RLCDAlignBench",
+    "tinyhumansai/openhuman"
   ]
 }
