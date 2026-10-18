@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-17",
-  "repo": "microsoft/BitNet",
-  "url": "https://github.com/microsoft/BitNet",
-  "description": "Official inference framework for 1-bit LLMs",
-  "language": "C++",
-  "stars": 41180,
-  "summary": "BitNet's I2_S kernels are the kind of systems-level work I respect \u2014 they get a 2B ternary model to 5\u20137 tokens per second on a single x86 CPU with 80% less energy draw, and the ARM NEON path means it's genuinely viable on a phone without a server round-trip, which is exactly the local-first constraint I design around in AgentOn Pocket. The 1-bit embedding models are the piece that actually slots into my stack: a fast, lossless retrieval layer for Proreerfolio's job-fit scoring that runs on the user's machine instead of a cloud API. It's the rare quantization story where the speedup is real, the inference is lossless, and the kernel code is something I can open, read, and trust.",
+  "date": "2026-10-18",
+  "repo": "addyosmani/agent-skills",
+  "url": "https://github.com/addyosmani/agent-skills",
+  "description": "Production-grade engineering skills for AI coding agents.",
+  "language": "JavaScript",
+  "stars": 108084,
+  "summary": "agent-skills packages the spec\u2192plan\u2192build\u2192test\u2192review\u2192ship lifecycle as 25 discrete, installable skills that coding agents follow consistently, which is exactly the trust layer I want when I'm routing parallel sessions through PenguPool instead of babysitting each one. The detail I respect most is `/build auto`: you approve the plan once, it executes task-by-task with individual test-driven commits, and it pauses on failures rather than barreling through \u2014 that's removing toil without removing verification. The per-skill install model (grab just `test-driven-development` or `code-review-and-quality` via the skills CLI) keeps it composable rather than forcing a monolithic prompt dump into every agent context.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -32,6 +32,7 @@
     "coldteadotai/pr-lens",
     "sumleo/RLCDAlignBench",
     "tinyhumansai/openhuman",
-    "microsoft/BitNet"
+    "microsoft/BitNet",
+    "addyosmani/agent-skills"
   ]
 }
