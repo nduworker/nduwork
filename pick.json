@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-18",
-  "repo": "addyosmani/agent-skills",
-  "url": "https://github.com/addyosmani/agent-skills",
-  "description": "Production-grade engineering skills for AI coding agents.",
-  "language": "JavaScript",
-  "stars": 108084,
-  "summary": "agent-skills packages the spec\u2192plan\u2192build\u2192test\u2192review\u2192ship lifecycle as 25 discrete, installable skills that coding agents follow consistently, which is exactly the trust layer I want when I'm routing parallel sessions through PenguPool instead of babysitting each one. The detail I respect most is `/build auto`: you approve the plan once, it executes task-by-task with individual test-driven commits, and it pauses on failures rather than barreling through \u2014 that's removing toil without removing verification. The per-skill install model (grab just `test-driven-development` or `code-review-and-quality` via the skills CLI) keeps it composable rather than forcing a monolithic prompt dump into every agent context.",
+  "date": "2026-10-19",
+  "repo": "Egonex-AI/Understand-Anything",
+  "url": "https://github.com/Egonex-AI/Understand-Anything",
+  "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+  "language": "TypeScript",
+  "stars": 86997,
+  "summary": "I like that this treats code comprehension as a graph problem rather than a \"summarize the README\" problem \u2014 the multi-agent pipeline walks every file, function, and dependency, then hands you a navigable structure you can search semantically and trace diff impact through before you commit. It slots naturally next to PenguPool in my setup: one routes the agent sessions, the other makes what those sessions actually understand visible and inspectable. The \"graphs that teach, not impress\" framing is the right altitude for a tool whose job is to kill the 200k-line onboarding tax, not add another dashboard to admire.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -33,6 +33,7 @@
     "sumleo/RLCDAlignBench",
     "tinyhumansai/openhuman",
     "microsoft/BitNet",
-    "addyosmani/agent-skills"
+    "addyosmani/agent-skills",
+    "Egonex-AI/Understand-Anything"
   ]
 }
