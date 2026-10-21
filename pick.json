@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-20",
-  "repo": "MadsLorentzen/ai-job-search",
-  "url": "https://github.com/MadsLorentzen/ai-job-search",
-  "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-  "language": "Python",
-  "stars": 59932,
-  "summary": "The drafter-reviewer pipeline for CV and cover-letter generation is close to the pattern I'm building in Proreerfolio, except here it's a local Claude Code workflow you fork and own rather than a SaaS you rent. I appreciate that the fit-evaluation step is a scored, structured pass that gates the drafting stage, and that the job-portal skills are swappable per market without touching the core loop. It's a clean reference for wiring an agent pipeline around a career task without wrapping it in a product you have to trust with your r\u00e9sum\u00e9.",
+  "date": "2026-10-21",
+  "repo": "thesysdev/openui",
+  "url": "https://github.com/thesysdev/openui",
+  "description": "The Open Standard for Generative UI",
+  "language": "TypeScript",
+  "stars": 12883,
+  "summary": "OpenUI lets you declare a component library, auto-generates the system prompt from it, and streams back a compact structured language (up to 67% fewer tokens than JSON) that a renderer parses progressively in React, Vue, Svelte, or Angular. That \"constrain the model's output space by what you allow, then render as tokens arrive\" pattern is exactly the seam I want between PenguPool's agent sessions and whatever surface displays their output, and it would save me hand-rolling schema-to-prompt glue for Proreerfolio's r\u00e9sum\u00e9 and job-fit views. The framework-agnostic lang-core package is the kind of small, swappable dependency I actually want in my stack rather than another full framework commitment.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -35,6 +35,7 @@
     "microsoft/BitNet",
     "addyosmani/agent-skills",
     "Egonex-AI/Understand-Anything",
-    "MadsLorentzen/ai-job-search"
+    "MadsLorentzen/ai-job-search",
+    "thesysdev/openui"
   ]
 }
