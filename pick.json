@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-21",
-  "repo": "thesysdev/openui",
-  "url": "https://github.com/thesysdev/openui",
-  "description": "The Open Standard for Generative UI",
-  "language": "TypeScript",
-  "stars": 12883,
-  "summary": "OpenUI lets you declare a component library, auto-generates the system prompt from it, and streams back a compact structured language (up to 67% fewer tokens than JSON) that a renderer parses progressively in React, Vue, Svelte, or Angular. That \"constrain the model's output space by what you allow, then render as tokens arrive\" pattern is exactly the seam I want between PenguPool's agent sessions and whatever surface displays their output, and it would save me hand-rolling schema-to-prompt glue for Proreerfolio's r\u00e9sum\u00e9 and job-fit views. The framework-agnostic lang-core package is the kind of small, swappable dependency I actually want in my stack rather than another full framework commitment.",
+  "date": "2026-10-22",
+  "repo": "oneo-me/onevra",
+  "url": "https://github.com/oneo-me/onevra",
+  "description": " Native desktop UI components for Go, built on MyGo. Themed controls, window shells, Lucide icons, plus chat, Markdown, code highlighting, charts and a command palette. Also includes a standalone packager for macOS, Windows and Linux.",
+  "language": "Go",
+  "stars": 248,
+  "summary": "Onevra gives you a native Go desktop UI without reaching for Electron or a webview, which is exactly the local-first, low-toil path I want for anything that needs to run on a machine and stay observable. The conversation component with tool activity, folded summaries, and attachment input is basically a ready-made shell for an agent-session viewer, the desktop version of what I'm doing with PenguPool and AgentOn Pocket. The design stance of refining MyGo's built-ins, filling only the gaps, and deferring to upstream when they catch up is the kind of restraint that keeps a dependency surface small and auditable.",
   "model": "qwen3.8:27b",
   "history": [
     "VectifyAI/PageIndex",
@@ -36,6 +36,7 @@
     "addyosmani/agent-skills",
     "Egonex-AI/Understand-Anything",
     "MadsLorentzen/ai-job-search",
-    "thesysdev/openui"
+    "thesysdev/openui",
+    "oneo-me/onevra"
   ]
 }
