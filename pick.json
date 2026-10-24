@@ -1,14 +1,13 @@
 {
-  "date": "2026-10-23",
-  "repo": "VectifyAI/PageIndex",
-  "url": "https://github.com/VectifyAI/PageIndex",
-  "description": "\ud83d\udcd1 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+  "date": "2026-10-24",
+  "repo": "ai-job-search-dev/ai-job-search",
+  "url": "https://github.com/ai-job-search-dev/ai-job-search",
+  "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
   "language": "Python",
-  "stars": 39552,
-  "summary": "PageIndex builds a hierarchical tree index over a document and lets an LLM reason its way to the right section instead of doing cosine similarity over chunks, which is the retrieval pattern I actually want for grounding a r\u00e9sum\u00e9 against a long job description in Proreerfolio without maintaining a vector store. The local SDK is just `pip install` plus your own API key, the tree is human-readable so you can trace why a particular paragraph was pulled, and the whole thing drops into an agent loop as a tool call. I've been hand-rolling tree-walkers for reading long bioinformatics protocols, so a composable, observable alternative to the \"chunk and embed everything\" default is exactly the kind of small system that removes toil.",
+  "stars": 64408,
+  "summary": "I like that the whole thing runs on your machine and the deliverable is a fork you own, which is the local-first, composable shape I'm trying to push in Proreerfolio rather than another SaaS that holds your career data hostage. The drafter-reviewer pipeline for CVs and cover letters is a clean two-agent pattern that kills the Sunday-night rewriting toil without any cloud dependency, and the portal-search skills are swappable per market, so the core workflow stays language-agnostic. The author's own funnel numbers\u201469 applications, 20 first interviews, 1 signed contract\u2014are the kind of grounded, no-bullshit proof I want to see instead of another \"AI will revolutionize job search\" headline.",
   "model": "qwen3.8:27b",
   "history": [
-    "obra/superpowers",
     "Nicolepcx/ai-agents-the-definitive-guide",
     "General-Legal/legal-templates",
     "colbymchenry/codegraph",
@@ -37,6 +36,7 @@
     "MadsLorentzen/ai-job-search",
     "thesysdev/openui",
     "oneo-me/onevra",
-    "VectifyAI/PageIndex"
+    "VectifyAI/PageIndex",
+    "ai-job-search-dev/ai-job-search"
   ]
 }
