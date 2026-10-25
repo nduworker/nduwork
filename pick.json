@@ -1,14 +1,13 @@
 {
-  "date": "2026-10-24",
-  "repo": "ai-job-search-dev/ai-job-search",
-  "url": "https://github.com/ai-job-search-dev/ai-job-search",
-  "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-  "language": "Python",
-  "stars": 64408,
-  "summary": "I like that the whole thing runs on your machine and the deliverable is a fork you own, which is the local-first, composable shape I'm trying to push in Proreerfolio rather than another SaaS that holds your career data hostage. The drafter-reviewer pipeline for CVs and cover letters is a clean two-agent pattern that kills the Sunday-night rewriting toil without any cloud dependency, and the portal-search skills are swappable per market, so the core workflow stays language-agnostic. The author's own funnel numbers\u201469 applications, 20 first interviews, 1 signed contract\u2014are the kind of grounded, no-bullshit proof I want to see instead of another \"AI will revolutionize job search\" headline.",
+  "date": "2026-10-25",
+  "repo": "lyogavin/airllm",
+  "url": "https://github.com/lyogavin/airllm",
+  "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
+  "language": "Jupyter Notebook",
+  "stars": 40646,
+  "summary": "AirLLM streams weights layer-by-layer (per-expert for MoE models, file-mapping the n-gram table on the host) so a 671B checkpoint fits in roughly 12 GB of VRAM on a single card, with no quantization or distillation step to reason about. That collapses the \"I need a multi-GPU box to run a local scorer for Proreerfolio job-fit checks\" problem into \"it runs on the workstation next to my desk,\" which is the local-first, observable setup I actually want. The training path is the sleeper feature: frozen weights stay on disk, only adapters live on the GPU, so I can fine-tune a 125B MoE on a 3060 Ti and iterate on agent behavior in PenguPool without a cloud invoice.",
   "model": "qwen3.8:27b",
   "history": [
-    "Nicolepcx/ai-agents-the-definitive-guide",
     "General-Legal/legal-templates",
     "colbymchenry/codegraph",
     "krafton-ai/WHALE",
@@ -37,6 +36,7 @@
     "thesysdev/openui",
     "oneo-me/onevra",
     "VectifyAI/PageIndex",
-    "ai-job-search-dev/ai-job-search"
+    "ai-job-search-dev/ai-job-search",
+    "lyogavin/airllm"
   ]
 }
