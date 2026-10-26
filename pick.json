@@ -1,14 +1,13 @@
 {
-  "date": "2026-10-25",
-  "repo": "lyogavin/airllm",
-  "url": "https://github.com/lyogavin/airllm",
-  "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
-  "language": "Jupyter Notebook",
-  "stars": 40646,
-  "summary": "AirLLM streams weights layer-by-layer (per-expert for MoE models, file-mapping the n-gram table on the host) so a 671B checkpoint fits in roughly 12 GB of VRAM on a single card, with no quantization or distillation step to reason about. That collapses the \"I need a multi-GPU box to run a local scorer for Proreerfolio job-fit checks\" problem into \"it runs on the workstation next to my desk,\" which is the local-first, observable setup I actually want. The training path is the sleeper feature: frozen weights stay on disk, only adapters live on the GPU, so I can fine-tune a 125B MoE on a 3060 Ti and iterate on agent behavior in PenguPool without a cloud invoice.",
+  "date": "2026-10-26",
+  "repo": "goldmansachs/gs-quant",
+  "url": "https://github.com/goldmansachs/gs-quant",
+  "description": "Python toolkit for quantitative finance",
+  "language": "Python",
+  "stars": 13694,
+  "summary": "Goldman Sachs open-sourced the Python client for their internal derivatives pricing and risk engine, so you get a package that wraps Monte Carlo, tree, and PDE solvers for exotic options behind a clean, typed API \u2014 the math is the real artifact, twenty-five years of quant modeling distilled into callable functions. The catch is that every backend call requires a GS institutional client ID and secret, so it's closer to a reference implementation you can read than a tool you can actually run on your laptop, which is the opposite of the local-first, composable stack I try to build. Still, skimming the API surface is a useful reminder of how much structure you inherit when a shop has been solving the same pricing and hedging problems for decades, and the stochastic primitives overlap enough with the simulation work I do in bioinformatics that the abstractions translate.",
   "model": "qwen3.8:27b",
   "history": [
-    "General-Legal/legal-templates",
     "colbymchenry/codegraph",
     "krafton-ai/WHALE",
     "satnaing/shadcn-admin",
@@ -37,6 +36,7 @@
     "oneo-me/onevra",
     "VectifyAI/PageIndex",
     "ai-job-search-dev/ai-job-search",
-    "lyogavin/airllm"
+    "lyogavin/airllm",
+    "goldmansachs/gs-quant"
   ]
 }
