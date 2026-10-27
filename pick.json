@@ -1,14 +1,13 @@
 {
-  "date": "2026-10-26",
-  "repo": "goldmansachs/gs-quant",
-  "url": "https://github.com/goldmansachs/gs-quant",
-  "description": "Python toolkit for quantitative finance",
-  "language": "Python",
-  "stars": 13694,
-  "summary": "Goldman Sachs open-sourced the Python client for their internal derivatives pricing and risk engine, so you get a package that wraps Monte Carlo, tree, and PDE solvers for exotic options behind a clean, typed API \u2014 the math is the real artifact, twenty-five years of quant modeling distilled into callable functions. The catch is that every backend call requires a GS institutional client ID and secret, so it's closer to a reference implementation you can read than a tool you can actually run on your laptop, which is the opposite of the local-first, composable stack I try to build. Still, skimming the API surface is a useful reminder of how much structure you inherit when a shop has been solving the same pricing and hedging problems for decades, and the stochastic primitives overlap enough with the simulation work I do in bioinformatics that the abstractions translate.",
+  "date": "2026-10-27",
+  "repo": "Ephemeral-AI-Lab/layerfs",
+  "url": "https://github.com/Ephemeral-AI-Lab/layerfs",
+  "description": "Ephemeral Workspaces, durable shared history. LayerFS gives every agent a complete, writable filesystem Workspace over shared committed history, without copying the base. Agents work in parallel, commit what changed as deduplicated checkpoints, then branch, rewind or merge. Try it with LayerFS \u00d7 DSH.",
+  "language": "Rust",
+  "stars": 2364,
+  "summary": "LayerFS puts a content-addressed, copy-on-write filesystem under a fleet of agents: each one mounts a full writable workspace over shared committed history, does its work, commits only the deltas, and unmounts, so parallel sessions branch and merge like git branches but at the block level. The storage math is the part that sold me\u2014157 snapshots of a real project in 100 MB, roughly 20\u00d7 tighter than Btrfs plus zstd\u2014which means \"spin up fifty agent workspaces\" stops being a disk and I/O problem. For PenguPool this is the layer I keep hand-rolling: right now each routed session in VS Code still gets its own scratch directory, and LayerFS would let them share one durable, rewindable history while staying ephemeral enough that a killed agent leaves nothing behind (the current build is disposable-profile only, so it is not your backup, but for agent scratch state it is exactly right).",
   "model": "qwen3.8:27b",
   "history": [
-    "colbymchenry/codegraph",
     "krafton-ai/WHALE",
     "satnaing/shadcn-admin",
     "tt-a1i/archify",
@@ -37,6 +36,7 @@
     "VectifyAI/PageIndex",
     "ai-job-search-dev/ai-job-search",
     "lyogavin/airllm",
-    "goldmansachs/gs-quant"
+    "goldmansachs/gs-quant",
+    "Ephemeral-AI-Lab/layerfs"
   ]
 }
