@@ -1,14 +1,13 @@
 {
-  "date": "2026-10-27",
-  "repo": "Ephemeral-AI-Lab/layerfs",
-  "url": "https://github.com/Ephemeral-AI-Lab/layerfs",
-  "description": "Ephemeral Workspaces, durable shared history. LayerFS gives every agent a complete, writable filesystem Workspace over shared committed history, without copying the base. Agents work in parallel, commit what changed as deduplicated checkpoints, then branch, rewind or merge. Try it with LayerFS \u00d7 DSH.",
-  "language": "Rust",
-  "stars": 2364,
-  "summary": "LayerFS puts a content-addressed, copy-on-write filesystem under a fleet of agents: each one mounts a full writable workspace over shared committed history, does its work, commits only the deltas, and unmounts, so parallel sessions branch and merge like git branches but at the block level. The storage math is the part that sold me\u2014157 snapshots of a real project in 100 MB, roughly 20\u00d7 tighter than Btrfs plus zstd\u2014which means \"spin up fifty agent workspaces\" stops being a disk and I/O problem. For PenguPool this is the layer I keep hand-rolling: right now each routed session in VS Code still gets its own scratch directory, and LayerFS would let them share one durable, rewindable history while staying ephemeral enough that a killed agent leaves nothing behind (the current build is disposable-profile only, so it is not your backup, but for agent scratch state it is exactly right).",
+  "date": "2026-10-28",
+  "repo": "General-Legal/legal-templates",
+  "url": "https://github.com/General-Legal/legal-templates",
+  "description": "Public collection of high-quality templates created by General Legal attorneys with CC0 license",
+  "language": "Python",
+  "stars": 3572,
+  "summary": "What catches my eye here isn't the legal content (though the CC0 license and the BAA template are genuinely useful for anyone touching health data) but the LLM-optimized markdown format with `<mark>`-tagged fill-in fields. It's a small, well-scoped corpus that makes a concrete agent task\u2014generate a customized privacy policy or DPA for a specific product\u2014actually tractable without the model hallucinating clauses, because the structure tells it exactly which slots to fill and which boilerplate to preserve. For something like Proreerfolio or Oh Tidepool, this is the kind of local-first, composable input that turns \"I need to pay a lawyer $2k for a terms-of-use page\" into \"I need a thirty-minute script against a directory of markdown files,\" which is the kind of toil removal I actually care about.",
   "model": "qwen3.8:27b",
   "history": [
-    "krafton-ai/WHALE",
     "satnaing/shadcn-admin",
     "tt-a1i/archify",
     "sumleo/RLCDAlignBench",
@@ -37,6 +36,7 @@
     "ai-job-search-dev/ai-job-search",
     "lyogavin/airllm",
     "goldmansachs/gs-quant",
-    "Ephemeral-AI-Lab/layerfs"
+    "Ephemeral-AI-Lab/layerfs",
+    "General-Legal/legal-templates"
   ]
 }
