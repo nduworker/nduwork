@@ -1,14 +1,13 @@
 {
-  "date": "2026-10-28",
-  "repo": "General-Legal/legal-templates",
-  "url": "https://github.com/General-Legal/legal-templates",
-  "description": "Public collection of high-quality templates created by General Legal attorneys with CC0 license",
-  "language": "Python",
-  "stars": 3572,
-  "summary": "What catches my eye here isn't the legal content (though the CC0 license and the BAA template are genuinely useful for anyone touching health data) but the LLM-optimized markdown format with `<mark>`-tagged fill-in fields. It's a small, well-scoped corpus that makes a concrete agent task\u2014generate a customized privacy policy or DPA for a specific product\u2014actually tractable without the model hallucinating clauses, because the structure tells it exactly which slots to fill and which boilerplate to preserve. For something like Proreerfolio or Oh Tidepool, this is the kind of local-first, composable input that turns \"I need to pay a lawyer $2k for a terms-of-use page\" into \"I need a thirty-minute script against a directory of markdown files,\" which is the kind of toil removal I actually care about.",
+  "date": "2026-10-29",
+  "repo": "Nutlope/hallmark",
+  "url": "https://github.com/Nutlope/hallmark",
+  "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+  "language": "CSS",
+  "stars": 41890,
+  "summary": "Hallmark is a design skill for coding agents that lints generated pages against the specific tells that make output read as machine-made\u2014the eyebrow label, the single coloured word in a headline, the email signup bolted onto every page\u2014and enforces quality through tiered gates (Floor, Reflex, Finish) where a build may overrule a default only on the record. What pulls me in is the 8 KB theme-as-material design: fifty self-contained files that constrain without prescribing, plus a cold fresh-context reviewer as the final gate, which is basically the observability-and-trust loop I try to build into PenguPool and AgentOn Pocket but pointed at visual output instead of session routing. For Proreerfolio, where a generated r\u00e9sum\u00e9 has to look like a person made it rather than a template engine, the sloplint approach is a concrete answer to the \"it works but it smells AI\" problem I keep running into.",
   "model": "qwen3.8:27b",
   "history": [
-    "satnaing/shadcn-admin",
     "tt-a1i/archify",
     "sumleo/RLCDAlignBench",
     "obra/superpowers",
@@ -37,6 +36,7 @@
     "lyogavin/airllm",
     "goldmansachs/gs-quant",
     "Ephemeral-AI-Lab/layerfs",
-    "General-Legal/legal-templates"
+    "General-Legal/legal-templates",
+    "Nutlope/hallmark"
   ]
 }
