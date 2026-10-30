@@ -1,14 +1,13 @@
 {
-  "date": "2026-10-29",
-  "repo": "Nutlope/hallmark",
-  "url": "https://github.com/Nutlope/hallmark",
-  "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-  "language": "CSS",
-  "stars": 41890,
-  "summary": "Hallmark is a design skill for coding agents that lints generated pages against the specific tells that make output read as machine-made\u2014the eyebrow label, the single coloured word in a headline, the email signup bolted onto every page\u2014and enforces quality through tiered gates (Floor, Reflex, Finish) where a build may overrule a default only on the record. What pulls me in is the 8 KB theme-as-material design: fifty self-contained files that constrain without prescribing, plus a cold fresh-context reviewer as the final gate, which is basically the observability-and-trust loop I try to build into PenguPool and AgentOn Pocket but pointed at visual output instead of session routing. For Proreerfolio, where a generated r\u00e9sum\u00e9 has to look like a person made it rather than a template engine, the sloplint approach is a concrete answer to the \"it works but it smells AI\" problem I keep running into.",
+  "date": "2026-10-30",
+  "repo": "peterjohannmedina/heurchain",
+  "url": "https://github.com/peterjohannmedina/heurchain",
+  "description": "HeurChain: Two-Tier Consolidating Memory for AI Agents \u2014 heuristic chaining for persistent agentic memory with hippocampal-inspired consolidation",
+  "language": "Python",
+  "stars": 12,
+  "summary": "HeurChain gives a fleet of agents a shared two-tier memory \u2014 a 7-day working vault that auto-promotes into a Redis long-term store, searched with BM25 rather than a vector pipeline \u2014 which is the kind of local-first, observable design I actually trust instead of bolting on another embedding service. The hippocampal-consolidation framing isn't just branding; the tier-promotion rule is a concrete mechanism that maps cleanly onto how I'd want PenguPool's parallel sessions to share context without each one re-deriving the same facts, and the agent-agnostic HTTP/MCP surface means AgentOn Pocket and a Claude Code session on my laptop hit the same store with zero per-agent config. Setup is a single `docker compose up` plus a URL the agent reads from the README or a bundled JSON to self-wire, which shaves off the last bit of glue-toil I usually spend when I stand up a new agent loop.",
   "model": "qwen3.8:27b",
   "history": [
-    "tt-a1i/archify",
     "sumleo/RLCDAlignBench",
     "obra/superpowers",
     "paperclipai/paperclip",
@@ -37,6 +36,7 @@
     "goldmansachs/gs-quant",
     "Ephemeral-AI-Lab/layerfs",
     "General-Legal/legal-templates",
-    "Nutlope/hallmark"
+    "Nutlope/hallmark",
+    "peterjohannmedina/heurchain"
   ]
 }
