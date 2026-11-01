@@ -1,14 +1,13 @@
 {
-  "date": "2026-10-31",
-  "repo": "unclecode/crawl4ai",
-  "url": "https://github.com/unclecode/crawl4ai",
-  "description": "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready Markdown. Run it yourself, or use Crawl4AI Cloud with one key. Join our Discord https://discord.gg/VuxzM8mtf",
-  "language": "Python",
-  "stars": 86647,
-  "summary": "Crawl4AI is the ingestion layer I've been missing for Proreerfolio: point it at a job posting or a company page and you get back structured Markdown with citations and boilerplate pruned by a BM25 or LLM filter, so the r\u00e9sum\u00e9-grounding and job-fit checks read the actual content instead of choking on nav bars and cookie banners. The MCP endpoint is what makes it slot cleanly into PenguPool and AgentOn Pocket, because an agent I route through those tools can call /scrape or /extract without me wiring a headless-browser session into the orchestration layer. I appreciate that the whole thing runs locally with a single pip install and an async browser pool you can watch and tune, which is the local-first, trust-the-pipeline stance I try to keep in everything I ship.",
+  "date": "2026-11-01",
+  "repo": "amontlabs/lcu",
+  "url": "https://github.com/amontlabs/lcu",
+  "description": "Codex computer use, decoupled from the app, for usage inside any harness.",
+  "language": "JavaScript",
+  "stars": 2349,
+  "summary": "LCU pulls Codex's computer-use runtime out from under the ChatGPT desktop app and exposes it as a plain tool to whatever harness you're already running \u2014 Claude Code, Codex CLI, Pi \u2014 so you get window reads, clicks, screenshots, and optional Chrome control without being locked to one client. The approval design is what sells it: per-app grants that only a human at the keyboard can answer (Touch ID on macOS), the model literally cannot see or fake the approval pane, and the app hosting the agent is never auto-approved, which is the kind of trust boundary you need before wiring computer-use into something like PenguPool where you're fanning out sessions across a machine. It's small, local, and composable in exactly the way I want agent tooling to be.",
   "model": "qwen3.8:27b",
   "history": [
-    "obra/superpowers",
     "paperclipai/paperclip",
     "cursor/plugins",
     "hypit-ai/hypit",
@@ -37,6 +36,7 @@
     "General-Legal/legal-templates",
     "Nutlope/hallmark",
     "peterjohannmedina/heurchain",
-    "unclecode/crawl4ai"
+    "unclecode/crawl4ai",
+    "amontlabs/lcu"
   ]
 }
