@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-01",
-  "repo": "amontlabs/lcu",
-  "url": "https://github.com/amontlabs/lcu",
-  "description": "Codex computer use, decoupled from the app, for usage inside any harness.",
-  "language": "JavaScript",
-  "stars": 2349,
-  "summary": "LCU pulls Codex's computer-use runtime out from under the ChatGPT desktop app and exposes it as a plain tool to whatever harness you're already running \u2014 Claude Code, Codex CLI, Pi \u2014 so you get window reads, clicks, screenshots, and optional Chrome control without being locked to one client. The approval design is what sells it: per-app grants that only a human at the keyboard can answer (Touch ID on macOS), the model literally cannot see or fake the approval pane, and the app hosting the agent is never auto-approved, which is the kind of trust boundary you need before wiring computer-use into something like PenguPool where you're fanning out sessions across a machine. It's small, local, and composable in exactly the way I want agent tooling to be.",
+  "date": "2026-11-02",
+  "repo": "HKUDS/CLI-Anything",
+  "url": "https://github.com/HKUDS/CLI-Anything",
+  "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+  "language": "Python",
+  "stars": 58130,
+  "summary": "CLI-Anything wraps arbitrary desktop and server software into thin, JSON-emitting CLI harnesses built on Click, so any agent framework can drive them without a bespoke integration, and their CLI-Hub registry lets you `pip install` a wrapper for Calibre, Joplin, ArcGIS Pro, and dozens of other tools in one command. For someone juggling parallel agent sessions in PenguPool or pushing Claude and Codex from AgentOn Pocket, this is the composable, local-first glue layer I actually want: the agent talks to a CLI, the CLI talks to the app, and the structured output is something I can log, inspect, and trust instead of scraping a GUI. I appreciate the 2,400-test validation baseline far more than the \"tomorrow's users are agents\" tagline, but the engineering underneath is the kind of toil-removing abstraction that turns a pile of one-off MCP servers into something genuinely composable.",
   "model": "qwen3.8:27b",
   "history": [
-    "paperclipai/paperclip",
     "cursor/plugins",
     "hypit-ai/hypit",
     "RizRiyz/luvus",
@@ -37,6 +36,7 @@
     "Nutlope/hallmark",
     "peterjohannmedina/heurchain",
     "unclecode/crawl4ai",
-    "amontlabs/lcu"
+    "amontlabs/lcu",
+    "HKUDS/CLI-Anything"
   ]
 }
