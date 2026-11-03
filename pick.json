@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-02",
-  "repo": "HKUDS/CLI-Anything",
-  "url": "https://github.com/HKUDS/CLI-Anything",
-  "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+  "date": "2026-11-03",
+  "repo": "wshobson/agents",
+  "url": "https://github.com/wshobson/agents",
+  "description": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
   "language": "Python",
-  "stars": 58130,
-  "summary": "CLI-Anything wraps arbitrary desktop and server software into thin, JSON-emitting CLI harnesses built on Click, so any agent framework can drive them without a bespoke integration, and their CLI-Hub registry lets you `pip install` a wrapper for Calibre, Joplin, ArcGIS Pro, and dozens of other tools in one command. For someone juggling parallel agent sessions in PenguPool or pushing Claude and Codex from AgentOn Pocket, this is the composable, local-first glue layer I actually want: the agent talks to a CLI, the CLI talks to the app, and the structured output is something I can log, inspect, and trust instead of scraping a GUI. I appreciate the 2,400-test validation baseline far more than the \"tomorrow's users are agents\" tagline, but the engineering underneath is the kind of toil-removing abstraction that turns a pile of one-off MCP servers into something genuinely composable.",
+  "stars": 42152,
+  "summary": "The interesting engineering here is the single-Markdown-source model: one definition of a skill or agent gets compiled into the right format for whichever coding harness you're on, from Claude Code's plugin marketplace to Codex's TOML agents to Copilot's generated profiles. That cross-compile layer for prompt components is the kind of abstraction that removes the copy-paste toil I run into in PenguPool when I route sessions across different runtimes, and the capability matrix documenting what each harness actually supports versus what it fakes with shims is a genuinely useful reference. The 94-plugin catalog is less the point than the fact that you can now treat \"agent instructions\" as a portable artifact rather than a per-tool rewrite.",
   "model": "qwen3.8:27b",
   "history": [
-    "cursor/plugins",
     "hypit-ai/hypit",
     "RizRiyz/luvus",
     "AgriciDaniel/compass",
@@ -37,6 +36,7 @@
     "peterjohannmedina/heurchain",
     "unclecode/crawl4ai",
     "amontlabs/lcu",
-    "HKUDS/CLI-Anything"
+    "HKUDS/CLI-Anything",
+    "wshobson/agents"
   ]
 }
