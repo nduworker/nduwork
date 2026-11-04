@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-03",
-  "repo": "wshobson/agents",
-  "url": "https://github.com/wshobson/agents",
-  "description": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+  "date": "2026-11-04",
+  "repo": "Imbad0202/academic-research-skills",
+  "url": "https://github.com/Imbad0202/academic-research-skills",
+  "description": "Academic Research Skills for Claude Code: research \u2192 write \u2192 review \u2192 revise \u2192 finalize",
   "language": "Python",
-  "stars": 42152,
-  "summary": "The interesting engineering here is the single-Markdown-source model: one definition of a skill or agent gets compiled into the right format for whichever coding harness you're on, from Claude Code's plugin marketplace to Codex's TOML agents to Copilot's generated profiles. That cross-compile layer for prompt components is the kind of abstraction that removes the copy-paste toil I run into in PenguPool when I route sessions across different runtimes, and the capability matrix documenting what each harness actually supports versus what it fakes with shims is a genuinely useful reference. The 94-plugin catalog is less the point than the fact that you can now treat \"agent instructions\" as a portable artifact rather than a per-tool rewrite.",
+  "stars": 55366,
+  "summary": "The thing I respect about this one is that it explicitly rejects the \"fully autonomous AI scientist\" framing and instead builds a human-in-the-loop pipeline for the research-to-publication workflow as a Claude Code plugin, with integrity gates that actually check for hallucinated citations, fabricated methodology, and claim-faithfulness gaps at each stage. As someone who grew up in bioinformatics where bioRxiv preprints become publications within months, the citation-provenance layer \u2014 locator anchors, a claim-audit pass that fetches the source and judges whether the claim is actually supported \u2014 is exactly the kind of small, observable guardrail that makes me trust an agent output enough to use it. It also composes naturally with what I already run: PenguPool routes sessions in VS Code, AgentOn Pocket kicks one off from my phone, and this is just another skill layer on top of Claude Code that handles the reference-hunting and formatting grunt work so the actual thinking stays with the author.",
   "model": "qwen3.8:27b",
   "history": [
-    "hypit-ai/hypit",
     "RizRiyz/luvus",
     "AgriciDaniel/compass",
     "ghostty-org/ghostty",
@@ -37,6 +36,7 @@
     "unclecode/crawl4ai",
     "amontlabs/lcu",
     "HKUDS/CLI-Anything",
-    "wshobson/agents"
+    "wshobson/agents",
+    "Imbad0202/academic-research-skills"
   ]
 }
