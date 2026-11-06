@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-05",
-  "repo": "snap-research/locomo",
-  "url": "https://github.com/snap-research/locomo",
-  "description": "",
+  "date": "2026-11-06",
+  "repo": "VectifyAI/PageIndex",
+  "url": "https://github.com/VectifyAI/PageIndex",
+  "description": "\ud83d\udcd1 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
   "language": "Python",
-  "stars": 1264,
-  "summary": "LoCoMo is a tight ten-conversation benchmark that stress-tests whether an LLM agent can actually recall and reason over very long-term dialogue, with clean QA and event-summarization annotations plus RAG-style observation and session-summary databases you can regenerate locally. For something like Proreerfolio, where the whole point is grounding a r\u00e9sum\u00e9 in a person's accumulated project history rather than letting a model confabulate, this is a practical way to measure whether my retrieval layer is pulling the right evidence instead of the most recent token. The synthetic-conversation generator with assigned personas is also a neat trick for stress-testing agent memory in PenguPool without needing real user histories, and the fact that the whole eval loop is a handful of bash scripts calling OpenAI, Anthropic, or HuggingFace endpoints keeps it small enough to run on a laptop before I trust it in a pipeline.",
+  "stars": 40138,
+  "summary": "PageIndex replaces the chunk-and-embed pipeline with a hierarchical tree index built from document layout, then lets an LLM reason its way through that tree to surface relevant pages, which is closer to how I actually navigate a 200-page regulatory PDF or a dense bioinformatics methods paper. The engineering is neat: tree extraction is layout-based and cheap, only the retrieval step needs a strong model, and the whole thing runs locally with `pip install pageindex` and your own key, no vector DB to babysit. For Proreerfolio's job-fit checks the traceability angle matters \u2014 when a candidate asks why a match was flagged, I can point to the exact pages the model traversed rather than an opaque cosine-similarity score, and that kind of auditability is the difference between a tool people trust and one they don't.",
   "model": "qwen3.8:27b",
   "history": [
-    "AgriciDaniel/compass",
     "ghostty-org/ghostty",
     "krafton-ai/WHALE",
     "General-Legal/legal-templates",
@@ -37,6 +36,7 @@
     "HKUDS/CLI-Anything",
     "wshobson/agents",
     "Imbad0202/academic-research-skills",
-    "snap-research/locomo"
+    "snap-research/locomo",
+    "VectifyAI/PageIndex"
   ]
 }
