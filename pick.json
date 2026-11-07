@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-06",
-  "repo": "VectifyAI/PageIndex",
-  "url": "https://github.com/VectifyAI/PageIndex",
-  "description": "\ud83d\udcd1 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+  "date": "2026-11-07",
+  "repo": "topoteretes/cognee",
+  "url": "https://github.com/topoteretes/cognee",
+  "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free",
   "language": "Python",
-  "stars": 40138,
-  "summary": "PageIndex replaces the chunk-and-embed pipeline with a hierarchical tree index built from document layout, then lets an LLM reason its way through that tree to surface relevant pages, which is closer to how I actually navigate a 200-page regulatory PDF or a dense bioinformatics methods paper. The engineering is neat: tree extraction is layout-based and cheap, only the retrieval step needs a strong model, and the whole thing runs locally with `pip install pageindex` and your own key, no vector DB to babysit. For Proreerfolio's job-fit checks the traceability angle matters \u2014 when a candidate asks why a match was flagged, I can point to the exact pages the model traversed rather than an opaque cosine-similarity score, and that kind of auditability is the difference between a tool people trust and one they don't.",
+  "stars": 33123,
+  "summary": "I like that cognee's core loop\u2014extract a knowledge graph with GLiNER, embed locally, query without ever calling an LLM\u2014actually runs on a laptop CPU, which makes it a plausible persistent-memory layer for the agent sessions I route through PenguPool instead of another cloud dependency I have to trust. The ontology support is the part that hooks me from my bioinformatics days: you define the entities and relations you care about, and the graph respects that structure instead of flattening everything into a vector blob. It's early and the README sells it with \"Company Brain\" energy, but the local-first quickstart with `cognee[gliner]` is the kind of thing I can wire into a dev loop tonight, watch the graph build, and decide whether it earns a place in the stack.",
   "model": "qwen3.8:27b",
   "history": [
-    "ghostty-org/ghostty",
     "krafton-ai/WHALE",
     "General-Legal/legal-templates",
     "storytold/photocraft",
@@ -37,6 +36,7 @@
     "wshobson/agents",
     "Imbad0202/academic-research-skills",
     "snap-research/locomo",
-    "VectifyAI/PageIndex"
+    "VectifyAI/PageIndex",
+    "topoteretes/cognee"
   ]
 }
