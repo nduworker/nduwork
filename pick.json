@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-07",
-  "repo": "topoteretes/cognee",
-  "url": "https://github.com/topoteretes/cognee",
-  "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free",
-  "language": "Python",
-  "stars": 33123,
-  "summary": "I like that cognee's core loop\u2014extract a knowledge graph with GLiNER, embed locally, query without ever calling an LLM\u2014actually runs on a laptop CPU, which makes it a plausible persistent-memory layer for the agent sessions I route through PenguPool instead of another cloud dependency I have to trust. The ontology support is the part that hooks me from my bioinformatics days: you define the entities and relations you care about, and the graph respects that structure instead of flattening everything into a vector blob. It's early and the README sells it with \"Company Brain\" energy, but the local-first quickstart with `cognee[gliner]` is the kind of thing I can wire into a dev loop tonight, watch the graph build, and decide whether it earns a place in the stack.",
+  "date": "2026-11-08",
+  "repo": "thesysdev/openui",
+  "url": "https://github.com/thesysdev/openui",
+  "description": "The Open Standard for Generative UI",
+  "language": "TypeScript",
+  "stars": 14968,
+  "summary": "The neat trick here is that you define a component library and it derives the system prompt for you, so the model's output is constrained to a typed vocabulary you control rather than free-form HTML soup \u2014 that's the same grounding discipline I apply in Proreerfolio, where a generated r\u00e9sum\u00e9 has to map back to real portfolio artifacts instead of hallucinated claims. The streaming-first language being 67% shorter than JSON matters when you're routing many agent sessions through PenguPool and want structured UI back without bloating context on every turn. I appreciate that the core parser is framework-agnostic with zero React dependency, so it slots into whatever surface I'm already shipping without pulling in a second rendering stack.",
   "model": "qwen3.8:27b",
   "history": [
-    "krafton-ai/WHALE",
     "General-Legal/legal-templates",
     "storytold/photocraft",
     "MadsLorentzen/ai-job-search",
@@ -37,6 +36,7 @@
     "Imbad0202/academic-research-skills",
     "snap-research/locomo",
     "VectifyAI/PageIndex",
-    "topoteretes/cognee"
+    "topoteretes/cognee",
+    "thesysdev/openui"
   ]
 }
