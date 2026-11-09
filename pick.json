@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-08",
-  "repo": "thesysdev/openui",
-  "url": "https://github.com/thesysdev/openui",
-  "description": "The Open Standard for Generative UI",
-  "language": "TypeScript",
-  "stars": 14968,
-  "summary": "The neat trick here is that you define a component library and it derives the system prompt for you, so the model's output is constrained to a typed vocabulary you control rather than free-form HTML soup \u2014 that's the same grounding discipline I apply in Proreerfolio, where a generated r\u00e9sum\u00e9 has to map back to real portfolio artifacts instead of hallucinated claims. The streaming-first language being 67% shorter than JSON matters when you're routing many agent sessions through PenguPool and want structured UI back without bloating context on every turn. I appreciate that the core parser is framework-agnostic with zero React dependency, so it slots into whatever surface I'm already shipping without pulling in a second rendering stack.",
+  "date": "2026-11-09",
+  "repo": "AgentMemoryRepo/agentmemoryrepo",
+  "url": "https://github.com/AgentMemoryRepo/agentmemoryrepo",
+  "description": "Spec for Agent Memory Repo",
+  "language": "",
+  "stars": 857,
+  "summary": "What I like about AgentMemoryRepo is that it reduces cross-session agent memory to a git repo of markdown with `[[wiki]]`-style cross-links, so the whole thing stays greppable, diffable, and inspectable without pulling in a vector store or an opaque embedding pipeline. The \"Dreaming\" consolidation pass\u2014merging duplicates, resolving contradictions, spotting patterns across sessions\u2014is the kind of background toil-removal that makes a multi-session workflow actually sustainable, and it maps cleanly onto PenguPool, where I already route parallel agent sessions that need to share findings without stepping on each other. It's still a spec rather than a shipped implementation, but the composability model (clone a second user's memory repo into the same machine, track who said what, write back to the right repo) is exactly the primitive I'd want under AgentOn Pocket once a session outlives a single phone interaction.",
   "model": "qwen3.8:27b",
   "history": [
-    "General-Legal/legal-templates",
     "storytold/photocraft",
     "MadsLorentzen/ai-job-search",
     "topoteretes/cognee",
@@ -37,6 +36,7 @@
     "snap-research/locomo",
     "VectifyAI/PageIndex",
     "topoteretes/cognee",
-    "thesysdev/openui"
+    "thesysdev/openui",
+    "AgentMemoryRepo/agentmemoryrepo"
   ]
 }
