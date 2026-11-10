@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-09",
-  "repo": "AgentMemoryRepo/agentmemoryrepo",
-  "url": "https://github.com/AgentMemoryRepo/agentmemoryrepo",
-  "description": "Spec for Agent Memory Repo",
-  "language": "",
-  "stars": 857,
-  "summary": "What I like about AgentMemoryRepo is that it reduces cross-session agent memory to a git repo of markdown with `[[wiki]]`-style cross-links, so the whole thing stays greppable, diffable, and inspectable without pulling in a vector store or an opaque embedding pipeline. The \"Dreaming\" consolidation pass\u2014merging duplicates, resolving contradictions, spotting patterns across sessions\u2014is the kind of background toil-removal that makes a multi-session workflow actually sustainable, and it maps cleanly onto PenguPool, where I already route parallel agent sessions that need to share findings without stepping on each other. It's still a spec rather than a shipped implementation, but the composability model (clone a second user's memory repo into the same machine, track who said what, write back to the right repo) is exactly the primitive I'd want under AgentOn Pocket once a session outlives a single phone interaction.",
+  "date": "2026-11-10",
+  "repo": "jamiepine/voicebox",
+  "url": "https://github.com/jamiepine/voicebox",
+  "description": "The open-source AI voice studio. Clone, dictate, create.",
+  "language": "Python",
+  "stars": 60381,
+  "summary": "I like that Voicebox collapses the full voice I/O loop\u2014Whisper-based dictation on the input side, eight TTS engines on the output side\u2014into one local Tauri binary with an MCP server bolted on, so any agent session I'm already driving through AgentOn Pocket or routing through PenguPool can call `voicebox_speak` and get spoken feedback in a cloned voice without phoning home to ElevenLabs. The practical win for me is the global dictation hotkey piped through a bundled local LLM for refinement; it kills the typing tax when I'm iterating on code or notes, and nothing leaves the machine. The multi-track stories editor and paralinguistic tags are fun, but the MCP tool-call surface is what turns this from a neat demo into a composable piece I can wire into an existing agent pipeline.",
   "model": "qwen3.8:27b",
   "history": [
-    "storytold/photocraft",
     "MadsLorentzen/ai-job-search",
     "topoteretes/cognee",
     "coldteadotai/pr-lens",
@@ -37,6 +36,7 @@
     "VectifyAI/PageIndex",
     "topoteretes/cognee",
     "thesysdev/openui",
-    "AgentMemoryRepo/agentmemoryrepo"
+    "AgentMemoryRepo/agentmemoryrepo",
+    "jamiepine/voicebox"
   ]
 }
