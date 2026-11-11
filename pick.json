@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-10",
-  "repo": "jamiepine/voicebox",
-  "url": "https://github.com/jamiepine/voicebox",
-  "description": "The open-source AI voice studio. Clone, dictate, create.",
-  "language": "Python",
-  "stars": 60381,
-  "summary": "I like that Voicebox collapses the full voice I/O loop\u2014Whisper-based dictation on the input side, eight TTS engines on the output side\u2014into one local Tauri binary with an MCP server bolted on, so any agent session I'm already driving through AgentOn Pocket or routing through PenguPool can call `voicebox_speak` and get spoken feedback in a cloned voice without phoning home to ElevenLabs. The practical win for me is the global dictation hotkey piped through a bundled local LLM for refinement; it kills the typing tax when I'm iterating on code or notes, and nothing leaves the machine. The multi-track stories editor and paralinguistic tags are fun, but the MCP tool-call surface is what turns this from a neat demo into a composable piece I can wire into an existing agent pipeline.",
+  "date": "2026-11-11",
+  "repo": "emilkowalski/skills",
+  "url": "https://github.com/emilkowalski/skills",
+  "description": "Skills for Designers and Engineers.",
+  "language": "Markdown",
+  "stars": 56103,
+  "summary": "The core observation is sharp: agents default to ease-in on enter animations, solid borders instead of shadows, and animate everything in sight, and Emil encodes each correction as a small installable skill file that any agent session can consume on demand. That maps directly onto how I think about PenguPool and AgentOn Pocket \u2014 the interesting layer isn't the model, it's the structured, composable knowledge you route into a session so it stops producing plausible-but-wrong output, and the \"break-ui\" skill (hit your UI with one-letter names, huge counts, empty lists before you ship) is the kind of cheap robustness check I wish more of my own agent workflows ran by default. The mobile-native and gesture skills are especially relevant to Oh Tidepool, where a 100vh bug or a stray tap-highlight flash is the whole gap between something that feels like an app and a website stretched onto a phone.",
   "model": "qwen3.8:27b",
   "history": [
-    "MadsLorentzen/ai-job-search",
     "topoteretes/cognee",
     "coldteadotai/pr-lens",
     "sumleo/RLCDAlignBench",
@@ -37,6 +36,7 @@
     "topoteretes/cognee",
     "thesysdev/openui",
     "AgentMemoryRepo/agentmemoryrepo",
-    "jamiepine/voicebox"
+    "jamiepine/voicebox",
+    "emilkowalski/skills"
   ]
 }
