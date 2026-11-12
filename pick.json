@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-11",
-  "repo": "emilkowalski/skills",
-  "url": "https://github.com/emilkowalski/skills",
-  "description": "Skills for Designers and Engineers.",
-  "language": "Markdown",
-  "stars": 56103,
-  "summary": "The core observation is sharp: agents default to ease-in on enter animations, solid borders instead of shadows, and animate everything in sight, and Emil encodes each correction as a small installable skill file that any agent session can consume on demand. That maps directly onto how I think about PenguPool and AgentOn Pocket \u2014 the interesting layer isn't the model, it's the structured, composable knowledge you route into a session so it stops producing plausible-but-wrong output, and the \"break-ui\" skill (hit your UI with one-letter names, huge counts, empty lists before you ship) is the kind of cheap robustness check I wish more of my own agent workflows ran by default. The mobile-native and gesture skills are especially relevant to Oh Tidepool, where a 100vh bug or a stray tap-highlight flash is the whole gap between something that feels like an app and a website stretched onto a phone.",
+  "date": "2026-11-12",
+  "repo": "apache/maka",
+  "url": "https://github.com/apache/maka",
+  "description": "Apache Maka (Incubating) is a high-performance agent workspace that keeps a complete record of everything it did.",
+  "language": "TypeScript",
+  "stars": 5963,
+  "summary": "Maka's core design decision is that the append-only log of every RuntimeEvent\u2014model messages, tool calls, permission grants, terminations\u2014is the actual runtime, and the desktop UI, crash recovery, and next prompt are all just projections of that log. That's exactly the observability contract I want for PenguPool and AgentOn Pocket: when I'm routing a dozen sessions in VS Code or driving a Claude run from my phone, I need a replayable record I can audit after the fact, not a black box that tells me it finished. I also respect that they publish per-task benchmarks against other harnesses on the same model and official verifier instead of shipping a single marketing number.",
   "model": "qwen3.8:27b",
   "history": [
-    "topoteretes/cognee",
     "coldteadotai/pr-lens",
     "sumleo/RLCDAlignBench",
     "tinyhumansai/openhuman",
@@ -37,6 +36,7 @@
     "thesysdev/openui",
     "AgentMemoryRepo/agentmemoryrepo",
     "jamiepine/voicebox",
-    "emilkowalski/skills"
+    "emilkowalski/skills",
+    "apache/maka"
   ]
 }
