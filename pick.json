@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-13",
-  "repo": "nautechsystems/nautilus_trader",
-  "url": "https://github.com/nautechsystems/nautilus_trader",
-  "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
-  "language": "Rust",
-  "stars": 31508,
-  "summary": "The Rust-core / Python-control-plane split is the same pattern I keep reaching for in PenguPool and AgentOn Pocket: a fast, typed engine doing the heavy lifting while a thin orchestration layer stays readable and swappable. What sells it to me is the deterministic event-driven backbone with a message bus and cache you can actually inspect, so backtest and live share the same strategy code and you can trust the simulation instead of hand-waving about \"close enough.\" For anyone building local-first agent or pipeline systems where observability and reproducibility matter more than raw throughput, the adapter model\u2014drop in any REST or WebSocket feed and get a uniform event stream\u2014is a clean template for composable data ingestion.",
+  "date": "2026-11-14",
+  "repo": "alchaincyf/huashu-art-motion",
+  "url": "https://github.com/alchaincyf/huashu-art-motion",
+  "description": "\u827a\u672f\u52a8\u753bskill\uff1a35\u79cd\u827a\u672f\u98ce\u683c\u30019\u79cd\u89e3\u8bf4\u8bed\u6cd5\uff0c\u7528\u4ee3\u7801\u8ba9\u753b\u52a8\u8d77\u6765\u3002",
+  "language": "JavaScript",
+  "stars": 6906,
+  "summary": "I like that huashu-art-motion treats art animation as a code-generation problem with a real QA loop: you feed it a style recipe card and a grammar spec, it renders through Playwright, then `qa.py` measures fluency and motion density, `film_gate.py` rejects anything that reads as a slideshow, and a second agent that wasn't in the production room watches the final cut for issues. The skill format (`npx skills add`) and the recipe/grammar card structure make it drop into an agent session the same way PenguPool routes one, which is the composable, local-first pattern I care about. What sold me most is `breakdown.py`: it reverse-engineers a reference clip into a beat grid and per-segment motion heatmap before you write a single frame, which is the kind of toil-removing engineering I respect far more than another \"AI video generator\" wrapper.",
   "model": "qwen3.8:27b",
   "history": [
-    "sumleo/RLCDAlignBench",
     "tinyhumansai/openhuman",
     "microsoft/BitNet",
     "addyosmani/agent-skills",
@@ -37,6 +36,7 @@
     "jamiepine/voicebox",
     "emilkowalski/skills",
     "apache/maka",
-    "nautechsystems/nautilus_trader"
+    "nautechsystems/nautilus_trader",
+    "alchaincyf/huashu-art-motion"
   ]
 }
