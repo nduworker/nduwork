@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-15",
-  "repo": "sgl-project/sglang",
-  "url": "https://github.com/sgl-project/sglang",
-  "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
-  "language": "Python",
-  "stars": 38901,
-  "summary": "SGLang sits underneath a lot of the agentic-inference plumbing I maintain: PenguPool routes many concurrent sessions and AgentOn Pocket needs low-latency replies on the phone side, so a serving layer that is actually tuned for multi-turn, tool-calling workloads instead of single-shot completions spares me from hand-tuning vLLM flags for the hundredth time. The Apple Silicon / Metal path is the detail that keeps it local-first friendly for Oh Tidepool's on-device tide math, and the structured-generation core\u2014radix attention, constrained decoding, speculative decoding via SpecForge\u2014is the kind of systems work that removes a whole class of prompt-plumbing toil I would otherwise rebuild per project. I'll skip the summit and Slack energy, but the engine itself is the right substrate for Proreerfolio's job-fit checks, where I need grounded, structured outputs without paying for a cloud GPU.",
+  "date": "2026-11-16",
+  "repo": "ghostty-org/ghostty",
+  "url": "https://github.com/ghostty-org/ghostty",
+  "description": "\ud83d\udc7b Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
+  "language": "Zig",
+  "stars": 64171,
+  "summary": "Ghostty's libghostty is the piece I didn't know I needed: a zero-dependency C/Zig terminal-emulation library you can embed into another app, which means PenguPool's multi-session routing and AgentOn Pocket's remote session driving could lean on a real, standards-compliant parser instead of shelling out to a full emulator per tab. The architecture is the kind of engineering I respect\u2014dedicated read, write, and render threads, SIMD-accelerated parsing, Metal on macOS\u2014so you get Alacritty-class speed without the feature tax, and the native SwiftUI shell means it feels like a Mac app rather than a web view in a window. For someone juggling a dozen agent sessions locally, a terminal that doesn't burn a core on GPU rendering is the difference between a workflow that scales and one that starts stuttering.",
   "model": "qwen3.8:27b",
   "history": [
-    "microsoft/BitNet",
     "addyosmani/agent-skills",
     "Egonex-AI/Understand-Anything",
     "MadsLorentzen/ai-job-search",
@@ -37,6 +36,7 @@
     "apache/maka",
     "nautechsystems/nautilus_trader",
     "alchaincyf/huashu-art-motion",
-    "sgl-project/sglang"
+    "sgl-project/sglang",
+    "ghostty-org/ghostty"
   ]
 }
