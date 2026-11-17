@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-16",
-  "repo": "ghostty-org/ghostty",
-  "url": "https://github.com/ghostty-org/ghostty",
-  "description": "\ud83d\udc7b Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.",
-  "language": "Zig",
-  "stars": 64171,
-  "summary": "Ghostty's libghostty is the piece I didn't know I needed: a zero-dependency C/Zig terminal-emulation library you can embed into another app, which means PenguPool's multi-session routing and AgentOn Pocket's remote session driving could lean on a real, standards-compliant parser instead of shelling out to a full emulator per tab. The architecture is the kind of engineering I respect\u2014dedicated read, write, and render threads, SIMD-accelerated parsing, Metal on macOS\u2014so you get Alacritty-class speed without the feature tax, and the native SwiftUI shell means it feels like a Mac app rather than a web view in a window. For someone juggling a dozen agent sessions locally, a terminal that doesn't burn a core on GPU rendering is the difference between a workflow that scales and one that starts stuttering.",
+  "date": "2026-11-17",
+  "repo": "JimLiu/baocut",
+  "url": "https://github.com/JimLiu/baocut",
+  "description": "BaoCut: an AI video agent with an editable timeline. Transcribe, subtitle, translate, dub, cut and animate.",
+  "language": "TypeScript",
+  "stars": 1784,
+  "summary": "BaoCut is a video editor where the agent works through a CLI and MCP command catalog and the result stays as a live, editable timeline instead of a one-shot MP4, so fixing one subtitle line or swapping one shot doesn't mean re-running the whole pipeline. The skill-install pattern\u2014drop a manual into `~/.claude/skills` so any agent knows how to drive the tool\u2014is essentially the same architecture I use in AgentOn Pocket and PenguPool to expose capabilities to Claude and Codex, just pointed at ffmpeg, Whisper, and HTDemucs instead of code. What sells it to me is the local-first stack combined with the \"honest delivery\" contract: the agent reports which frames it actually inspected and what still needs a human ear, which is the trust model I expect from any tool I let run autonomously on my machine.",
   "model": "qwen3.8:27b",
   "history": [
-    "addyosmani/agent-skills",
     "Egonex-AI/Understand-Anything",
     "MadsLorentzen/ai-job-search",
     "thesysdev/openui",
@@ -37,6 +36,7 @@
     "nautechsystems/nautilus_trader",
     "alchaincyf/huashu-art-motion",
     "sgl-project/sglang",
-    "ghostty-org/ghostty"
+    "ghostty-org/ghostty",
+    "JimLiu/baocut"
   ]
 }
