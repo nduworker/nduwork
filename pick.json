@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-17",
-  "repo": "JimLiu/baocut",
-  "url": "https://github.com/JimLiu/baocut",
-  "description": "BaoCut: an AI video agent with an editable timeline. Transcribe, subtitle, translate, dub, cut and animate.",
-  "language": "TypeScript",
-  "stars": 1784,
-  "summary": "BaoCut is a video editor where the agent works through a CLI and MCP command catalog and the result stays as a live, editable timeline instead of a one-shot MP4, so fixing one subtitle line or swapping one shot doesn't mean re-running the whole pipeline. The skill-install pattern\u2014drop a manual into `~/.claude/skills` so any agent knows how to drive the tool\u2014is essentially the same architecture I use in AgentOn Pocket and PenguPool to expose capabilities to Claude and Codex, just pointed at ffmpeg, Whisper, and HTDemucs instead of code. What sells it to me is the local-first stack combined with the \"honest delivery\" contract: the agent reports which frames it actually inspected and what still needs a human ear, which is the trust model I expect from any tool I let run autonomously on my machine.",
+  "date": "2026-11-18",
+  "repo": "oneo-me/onevra",
+  "url": "https://github.com/oneo-me/onevra",
+  "description": " Native desktop UI components for Go, built on MyGo. Themed controls, window shells, Lucide icons, plus chat, Markdown, code highlighting, charts and a command palette. Also includes a standalone packager for macOS, Windows and Linux.",
+  "language": "Go",
+  "stars": 294,
+  "summary": "Onevra is a native desktop UI kit for Go built on MyGo that hands you themed controls, a command palette, chat bubbles, Markdown rendering, and code highlighting without pulling in Electron or a Chromium runtime, which is the kind of local-first stack that fits how I think about shipping small tools. The cross-platform packager plus the clean separation where the app owns state, persistence, and async work means I could prototype a native front-end for PenguPool or AgentOn Pocket in an afternoon instead of wrestling with a web bridge. What sells me is the component contract: you compose shells and controls, the library doesn't try to become a framework, and the standard Go toolchain is all you need to keep it honest.",
   "model": "qwen3.8:27b",
   "history": [
-    "Egonex-AI/Understand-Anything",
     "MadsLorentzen/ai-job-search",
     "thesysdev/openui",
     "oneo-me/onevra",
@@ -37,6 +36,7 @@
     "alchaincyf/huashu-art-motion",
     "sgl-project/sglang",
     "ghostty-org/ghostty",
-    "JimLiu/baocut"
+    "JimLiu/baocut",
+    "oneo-me/onevra"
   ]
 }
