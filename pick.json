@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-19",
-  "repo": "garrytan/gstack",
-  "url": "https://github.com/garrytan/gstack",
-  "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-  "language": "TypeScript",
-  "stars": 142122,
-  "summary": "I like that gstack is just Markdown slash commands and a setup script \u2014 no proprietary runtime, no cloud lock-in \u2014 so you can read every role definition, fork the QA skill, and wire it into the session routing I already do in PenguPool without fighting a vendor. The concrete parts are what earn my trust: a QA skill that opens a real browser and reproduces a bug against your staging URL, a security skill that runs OWASP and STRIDE checks, a review skill that catches the bugs that pass CI but break in production. I'm less charmed by the \"virtual engineering team\" packaging and the sprint-counting, but the core insight \u2014 that a coding agent is more useful with a narrow role and a checklist than with a blank prompt \u2014 is the same direction I've been pushing in with AgentOn Pocket and PenguPool, and the fact that it's all local, all readable, MIT-licensed, makes it easy to trust.",
+  "date": "2026-11-20",
+  "repo": "storytold/photocraft",
+  "url": "https://github.com/storytold/photocraft",
+  "description": "PhotoCraft: An open-source photo editor written from scratch in pure Rust",
+  "language": "Rust",
+  "stars": 80719,
+  "summary": "What catches my eye here isn't the Photoshop clone itself but the control architecture: every editing action is a command object, so the same engine that drives the GUI can be driven from a CLI, a JSON control channel, or an MCP server. That's the exact pattern I'm pushing toward with PenguPool and AgentOn Pocket, treating a heavyweight application as a composable service an agent can call into instead of something you have to sit at and click through. And the fact that it's pure Rust on wgpu, no Electron, no web view, offline by default, makes it the kind of local-first tool I can drop into a pipeline and actually trust rather than another cloud dependency I have to babysit.",
   "model": "qwen3.8:27b",
   "history": [
-    "thesysdev/openui",
     "oneo-me/onevra",
     "VectifyAI/PageIndex",
     "ai-job-search-dev/ai-job-search",
@@ -37,6 +36,7 @@
     "ghostty-org/ghostty",
     "JimLiu/baocut",
     "oneo-me/onevra",
-    "garrytan/gstack"
+    "garrytan/gstack",
+    "storytold/photocraft"
   ]
 }
