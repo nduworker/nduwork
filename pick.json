@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-20",
-  "repo": "storytold/photocraft",
-  "url": "https://github.com/storytold/photocraft",
-  "description": "PhotoCraft: An open-source photo editor written from scratch in pure Rust",
-  "language": "Rust",
-  "stars": 80719,
-  "summary": "What catches my eye here isn't the Photoshop clone itself but the control architecture: every editing action is a command object, so the same engine that drives the GUI can be driven from a CLI, a JSON control channel, or an MCP server. That's the exact pattern I'm pushing toward with PenguPool and AgentOn Pocket, treating a heavyweight application as a composable service an agent can call into instead of something you have to sit at and click through. And the fact that it's pure Rust on wgpu, no Electron, no web view, offline by default, makes it the kind of local-first tool I can drop into a pipeline and actually trust rather than another cloud dependency I have to babysit.",
+  "date": "2026-11-21",
+  "repo": "AgentMemoryRepo/agentmemoryrepo",
+  "url": "https://github.com/AgentMemoryRepo/agentmemoryrepo",
+  "description": "Spec for Agent Memory Repo",
+  "language": "",
+  "stars": 878,
+  "summary": "I like that the entire memory layer is a git repo of Markdown with `[[wikilinks]]` and a `[source: \u2026]` tag on every entry, so you can grep it, diff it, and audit provenance without spinning up a vector database, which is the kind of inspectable, local-first design I actually trust. The Dreaming loop, a periodic agent that merges duplicates and resolves contradictions, is a small but sharp way to keep that repo from rotting, and the composability model where parallel sessions push to the same repo and let git flag conflicts maps directly onto what PenguPool needs when I fan work out across sessions. It ships as a spec rather than a product, which I appreciate; it gives me a format to fold into my own agent tooling without locking into anyone's cloud.",
   "model": "qwen3.8:27b",
   "history": [
-    "oneo-me/onevra",
     "VectifyAI/PageIndex",
     "ai-job-search-dev/ai-job-search",
     "lyogavin/airllm",
@@ -37,6 +36,7 @@
     "JimLiu/baocut",
     "oneo-me/onevra",
     "garrytan/gstack",
-    "storytold/photocraft"
+    "storytold/photocraft",
+    "AgentMemoryRepo/agentmemoryrepo"
   ]
 }
