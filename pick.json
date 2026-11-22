@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-21",
-  "repo": "AgentMemoryRepo/agentmemoryrepo",
-  "url": "https://github.com/AgentMemoryRepo/agentmemoryrepo",
-  "description": "Spec for Agent Memory Repo",
-  "language": "",
-  "stars": 878,
-  "summary": "I like that the entire memory layer is a git repo of Markdown with `[[wikilinks]]` and a `[source: \u2026]` tag on every entry, so you can grep it, diff it, and audit provenance without spinning up a vector database, which is the kind of inspectable, local-first design I actually trust. The Dreaming loop, a periodic agent that merges duplicates and resolves contradictions, is a small but sharp way to keep that repo from rotting, and the composability model where parallel sessions push to the same repo and let git flag conflicts maps directly onto what PenguPool needs when I fan work out across sessions. It ships as a spec rather than a product, which I appreciate; it gives me a format to fold into my own agent tooling without locking into anyone's cloud.",
+  "date": "2026-11-22",
+  "repo": "confident-ai/deepeval",
+  "url": "https://github.com/confident-ai/deepeval",
+  "description": "The LLM Evaluation Framework",
+  "language": "Python",
+  "stars": 19593,
+  "summary": "DeepEval is essentially pytest for LLM systems: you define test cases, plug in metrics like G-Eval, task completion, or tool correctness, and it scores your agent's full trajectory step by step locally, no cloud round-trip required. For PenguPool, where I route multiple agent sessions and need to know whether a sub-agent actually called the right tool with the right arguments before handing off to the next one, having a deterministic eval layer that checks plan adherence and step efficiency is the kind of observability I've been bolting together by hand. It also makes the \"trust\" part of my local-first philosophy concrete: you can regression-test a prompt change or a model swap without guessing whether quality silently drifted.",
   "model": "qwen3.8:27b",
   "history": [
-    "VectifyAI/PageIndex",
     "ai-job-search-dev/ai-job-search",
     "lyogavin/airllm",
     "goldmansachs/gs-quant",
@@ -37,6 +36,7 @@
     "oneo-me/onevra",
     "garrytan/gstack",
     "storytold/photocraft",
-    "AgentMemoryRepo/agentmemoryrepo"
+    "AgentMemoryRepo/agentmemoryrepo",
+    "confident-ai/deepeval"
   ]
 }
