@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-23",
-  "repo": "JetBrains/thinkrail",
-  "url": "https://github.com/JetBrains/thinkrail",
-  "description": "ThinkRail is the agentic IDE that gets better every time you use it",
-  "language": "TypeScript",
-  "stars": 8418,
-  "summary": "The spec-graph and reusable-skills layer is the interesting part here: instead of re-deriving project context every session, ThinkRail persists structured knowledge so the underlying `pi` agent actually accumulates understanding of your codebase, which lands closer to the observability-and-trust problem I care about than another \"AI pair programmer\" pitch. The git-worktree workspace isolation is also a clean pattern for parallel agent sessions \u2014 each agent gets its own branch and working directory, you merge what you want and discard the rest \u2014 and it's the same multi-session routing problem I'm solving in PenguPool, just wrapped in a heavier JetBrains-style IDE shell with a keyboard model I actually enjoy. I'll be watching how the extension system lands, because an agent that can author its own tools on demand is the composability story I want to see proven outside a single vendor's ecosystem.",
+  "date": "2026-11-24",
+  "repo": "sumleo/RLCDAlignBench",
+  "url": "https://github.com/sumleo/RLCDAlignBench",
+  "description": "RLCDAlignBench: 44 alignment-failure detection benchmarks and code for 'Just Ask Jev' (RLCD zero-shot detector of AI alignment failures)",
+  "language": "Python",
+  "stars": 31,
+  "summary": "RLCDAlignBench gives you 44 labelled detection tasks across ten failure modes \u2014 sycophancy, prompt injection, reward hacking, concealing uncertainty, the works \u2014 with provenance back to the scorer that generated each label, which is the kind of benchmark you actually want when you need to answer \"can I trust this model's output?\" without hand-waving. The Jev detector is a small but useful reframe: one forward pass, multiple typed questions read as calibrated probabilities rather than argmax decisions, and the paper shows question wording matters far less than treating the output as a distribution, which is exactly the kind of composable, observable guardrail layer I want sitting between an agent session and whatever it's about to do. I also like that they ship battery linters to catch criteria leakage in the questions themselves; that's the engineering that keeps you from fooling yourself with a benchmark that looks good on paper.",
   "model": "qwen3.8:27b",
   "history": [
-    "lyogavin/airllm",
     "goldmansachs/gs-quant",
     "Ephemeral-AI-Lab/layerfs",
     "General-Legal/legal-templates",
@@ -37,6 +36,7 @@
     "storytold/photocraft",
     "AgentMemoryRepo/agentmemoryrepo",
     "confident-ai/deepeval",
-    "JetBrains/thinkrail"
+    "JetBrains/thinkrail",
+    "sumleo/RLCDAlignBench"
   ]
 }
