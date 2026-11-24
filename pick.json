@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-22",
-  "repo": "confident-ai/deepeval",
-  "url": "https://github.com/confident-ai/deepeval",
-  "description": "The LLM Evaluation Framework",
-  "language": "Python",
-  "stars": 19593,
-  "summary": "DeepEval is essentially pytest for LLM systems: you define test cases, plug in metrics like G-Eval, task completion, or tool correctness, and it scores your agent's full trajectory step by step locally, no cloud round-trip required. For PenguPool, where I route multiple agent sessions and need to know whether a sub-agent actually called the right tool with the right arguments before handing off to the next one, having a deterministic eval layer that checks plan adherence and step efficiency is the kind of observability I've been bolting together by hand. It also makes the \"trust\" part of my local-first philosophy concrete: you can regression-test a prompt change or a model swap without guessing whether quality silently drifted.",
+  "date": "2026-11-23",
+  "repo": "JetBrains/thinkrail",
+  "url": "https://github.com/JetBrains/thinkrail",
+  "description": "ThinkRail is the agentic IDE that gets better every time you use it",
+  "language": "TypeScript",
+  "stars": 8418,
+  "summary": "The spec-graph and reusable-skills layer is the interesting part here: instead of re-deriving project context every session, ThinkRail persists structured knowledge so the underlying `pi` agent actually accumulates understanding of your codebase, which lands closer to the observability-and-trust problem I care about than another \"AI pair programmer\" pitch. The git-worktree workspace isolation is also a clean pattern for parallel agent sessions \u2014 each agent gets its own branch and working directory, you merge what you want and discard the rest \u2014 and it's the same multi-session routing problem I'm solving in PenguPool, just wrapped in a heavier JetBrains-style IDE shell with a keyboard model I actually enjoy. I'll be watching how the extension system lands, because an agent that can author its own tools on demand is the composability story I want to see proven outside a single vendor's ecosystem.",
   "model": "qwen3.8:27b",
   "history": [
-    "ai-job-search-dev/ai-job-search",
     "lyogavin/airllm",
     "goldmansachs/gs-quant",
     "Ephemeral-AI-Lab/layerfs",
@@ -37,6 +36,7 @@
     "garrytan/gstack",
     "storytold/photocraft",
     "AgentMemoryRepo/agentmemoryrepo",
-    "confident-ai/deepeval"
+    "confident-ai/deepeval",
+    "JetBrains/thinkrail"
   ]
 }
