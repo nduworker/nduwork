@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-24",
-  "repo": "sumleo/RLCDAlignBench",
-  "url": "https://github.com/sumleo/RLCDAlignBench",
-  "description": "RLCDAlignBench: 44 alignment-failure detection benchmarks and code for 'Just Ask Jev' (RLCD zero-shot detector of AI alignment failures)",
+  "date": "2026-11-25",
+  "repo": "anthropics/knowledge-work-plugins",
+  "url": "https://github.com/anthropics/knowledge-work-plugins",
+  "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
   "language": "Python",
-  "stars": 31,
-  "summary": "RLCDAlignBench gives you 44 labelled detection tasks across ten failure modes \u2014 sycophancy, prompt injection, reward hacking, concealing uncertainty, the works \u2014 with provenance back to the scorer that generated each label, which is the kind of benchmark you actually want when you need to answer \"can I trust this model's output?\" without hand-waving. The Jev detector is a small but useful reframe: one forward pass, multiple typed questions read as calibrated probabilities rather than argmax decisions, and the paper shows question wording matters far less than treating the output as a distribution, which is exactly the kind of composable, observable guardrail layer I want sitting between an agent session and whatever it's about to do. I also like that they ship battery linters to catch criteria leakage in the questions themselves; that's the engineering that keeps you from fooling yourself with a benchmark that looks good on paper.",
+  "stars": 36938,
+  "summary": "The plugin format is just a folder of markdown skills, a JSON manifest, and an MCP config \u2014 no build step, no runtime, no infrastructure \u2014 which is the kind of inspectable, composable agent configuration I want to see as the default instead of another proprietary SDK. The bio-research plugin is the one that actually pulled me in: it wires Claude to PubMed, ChEMBL, Open Targets, and Benchling, the preclinical pipeline I grew up in, and the skill files show how to encode workflows like target prioritization without writing a line of glue code. For someone juggling agent sessions the way I do with PenguPool and AgentOn Pocket, the fact that every connector is a single MCP server entry in a JSON file means I could fork this structure and point it at my own local tools without touching a dashboard or signing up for Cowork.",
   "model": "qwen3.8:27b",
   "history": [
-    "goldmansachs/gs-quant",
     "Ephemeral-AI-Lab/layerfs",
     "General-Legal/legal-templates",
     "Nutlope/hallmark",
@@ -37,6 +36,7 @@
     "AgentMemoryRepo/agentmemoryrepo",
     "confident-ai/deepeval",
     "JetBrains/thinkrail",
-    "sumleo/RLCDAlignBench"
+    "sumleo/RLCDAlignBench",
+    "anthropics/knowledge-work-plugins"
   ]
 }
