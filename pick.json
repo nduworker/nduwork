@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-25",
-  "repo": "anthropics/knowledge-work-plugins",
-  "url": "https://github.com/anthropics/knowledge-work-plugins",
-  "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+  "date": "2026-11-26",
+  "repo": "Prefrontal-AI/latent-sparse-attention",
+  "url": "https://github.com/Prefrontal-AI/latent-sparse-attention",
+  "description": "Code for Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
   "language": "Python",
-  "stars": 36938,
-  "summary": "The plugin format is just a folder of markdown skills, a JSON manifest, and an MCP config \u2014 no build step, no runtime, no infrastructure \u2014 which is the kind of inspectable, composable agent configuration I want to see as the default instead of another proprietary SDK. The bio-research plugin is the one that actually pulled me in: it wires Claude to PubMed, ChEMBL, Open Targets, and Benchling, the preclinical pipeline I grew up in, and the skill files show how to encode workflows like target prioritization without writing a line of glue code. For someone juggling agent sessions the way I do with PenguPool and AgentOn Pocket, the fact that every connector is a single MCP server entry in a JSON file means I could fork this structure and point it at my own local tools without touching a dashboard or signing up for Cowork.",
+  "stars": 478,
+  "summary": "The core idea is clean: instead of the O(n\u00b2) scan, LSA pools keys into latent-space clusters and lets each query score only the bucket centroids before attending to the selected long-range keys plus a local window, which is the same hierarchical-index trick I grew up with in read alignment, just applied to attention. What sells it to me is that the kernel is untouched and D-LSA distills the indexer onto a pre-trained model, so it ships as a drop-in SGLang plugin rather than a new architecture, meaning I could wire it into the agent sessions PenguPool routes without retraining a thing. The training-free PCA variant is the kind of small, local-first experiment I'd run on a single GPU before deciding whether a full distillation pass is worth the cluster time.",
   "model": "qwen3.8:27b",
   "history": [
-    "Ephemeral-AI-Lab/layerfs",
     "General-Legal/legal-templates",
     "Nutlope/hallmark",
     "peterjohannmedina/heurchain",
@@ -37,6 +36,7 @@
     "confident-ai/deepeval",
     "JetBrains/thinkrail",
     "sumleo/RLCDAlignBench",
-    "anthropics/knowledge-work-plugins"
+    "anthropics/knowledge-work-plugins",
+    "Prefrontal-AI/latent-sparse-attention"
   ]
 }
