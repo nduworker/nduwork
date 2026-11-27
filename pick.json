@@ -1,14 +1,13 @@
 {
-  "date": "2026-11-26",
-  "repo": "Prefrontal-AI/latent-sparse-attention",
-  "url": "https://github.com/Prefrontal-AI/latent-sparse-attention",
-  "description": "Code for Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
-  "language": "Python",
-  "stars": 478,
-  "summary": "The core idea is clean: instead of the O(n\u00b2) scan, LSA pools keys into latent-space clusters and lets each query score only the bucket centroids before attending to the selected long-range keys plus a local window, which is the same hierarchical-index trick I grew up with in read alignment, just applied to attention. What sells it to me is that the kernel is untouched and D-LSA distills the indexer onto a pre-trained model, so it ships as a drop-in SGLang plugin rather than a new architecture, meaning I could wire it into the agent sessions PenguPool routes without retraining a thing. The training-free PCA variant is the kind of small, local-first experiment I'd run on a single GPU before deciding whether a full distillation pass is worth the cluster time.",
+  "date": "2026-11-27",
+  "repo": "VictorTaelin/uniichat",
+  "url": "https://github.com/VictorTaelin/uniichat",
+  "description": "",
+  "language": "TypeScript",
+  "stars": 691,
+  "summary": "The memory tree is the part I'd actually borrow: instead of the usual context compaction, UniiChat merges neighboring one-line summaries into a binary tree in the background with a cheap model, so every call gets a 128 KB view where recent messages are verbatim and older ones fade into broader lines, and the agent can zoom back to any original without losing anything. It's about as local-first as an agent server gets\u2014your history is JSON lines in ~/.unii, one `bun Server.ts` runs it, and every window (browser, terminal, a Mac it can drive) is just a view into the single thread the server owns, which is a useful inverse of the many-sessions routing I do in PenguPool. The per-file design-in-header-comments and the \"it's vibe-coded, expect bugs\" framing make it readable enough to fork, which I respect more than most agent frameworks that bury their architecture behind abstractions.",
   "model": "qwen3.8:27b",
   "history": [
-    "General-Legal/legal-templates",
     "Nutlope/hallmark",
     "peterjohannmedina/heurchain",
     "unclecode/crawl4ai",
@@ -37,6 +36,7 @@
     "JetBrains/thinkrail",
     "sumleo/RLCDAlignBench",
     "anthropics/knowledge-work-plugins",
-    "Prefrontal-AI/latent-sparse-attention"
+    "Prefrontal-AI/latent-sparse-attention",
+    "VictorTaelin/uniichat"
   ]
 }
